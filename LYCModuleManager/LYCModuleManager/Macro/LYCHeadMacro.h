@@ -9,5 +9,22 @@
 #ifndef LYCHeadMacro_h
 #define LYCHeadMacro_h
 
+#import "UIFont+QJKJHelper.h"
+#import "UIColor+QJKJHelper.h"
+#import "UIView+QJKJBase.h"
+
+#import "QJKJBaseVC.h"
+
+#import "QJKJView.h"
+#import "QJKJButton.h"
+#import "QJKJTextField.h"
+#import "QJKJLabel.h"
+#import "QJKJTableView.h"
+#import "QJKJTableViewCell.h"
+#import "QJKJCollectionView.h"
+#import "QJKJImageView.h"
+#import "QJKJSwitch.h"
+#import "QJKJTextView.h"
+#import "QJKJScrollView.h"
 
 #endif /* LYCHeadMacro_h */

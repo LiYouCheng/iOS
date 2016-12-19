@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0A11923BCA7A98BA599139CF80F8923DF67BA84D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0A11923BCA7A98BA599139CF80F8923DF67BA84D" : 0,
+    "0B2F00A1ABB58E896FF74B31B98D663E40B81DC4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7A7A1FC5-A4AF-4C28-BB0E-16E54F4C20CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0A11923BCA7A98BA599139CF80F8923DF67BA84D" : "iOS\/",
+    "0B2F00A1ABB58E896FF74B31B98D663E40B81DC4" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LYCModuleManager",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LYCModuleManager\/LYCModuleManager.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LiYouCheng\/iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A11923BCA7A98BA599139CF80F8923DF67BA84D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LiYouCheng\/SoftWare.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B2F00A1ABB58E896FF74B31B98D663E40B81DC4"
+    }
+  ]
+}

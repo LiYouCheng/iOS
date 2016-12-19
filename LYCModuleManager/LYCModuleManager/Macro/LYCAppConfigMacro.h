@@ -32,6 +32,19 @@
 // 缩放
 #define QJKJ_SCALE (DWIDTH == 375?(375.f/320):(DWIDTH == 414?414.f/320:1.0))
 
+#pragma mark - 颜色相关
+
+//随机颜色
+#define QJKJ_RANDOM_COLOR(r,g,b) QJKJ_COLOR_ALPHA(r,g,b,1.f)
+
+//颜色，不包括透明度
+#define QJKJ_COLOR(r,g,b) QJKJ_COLOR_ALPHA(arc4random_uniform(255)/255.f,arc4random_uniform(255)/255.f,arc4random_uniform(255)/255.f,1.f)
+
+//颜色，包括透明度
+#define QJKJ_COLOR_ALPHA(r,g,b,a) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]
+
+
+
 #pragma mark - 输出相关
 
 //自定义输出信息

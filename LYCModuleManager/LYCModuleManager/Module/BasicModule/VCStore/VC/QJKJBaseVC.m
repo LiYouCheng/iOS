@@ -1,38 +1,23 @@
 //
-//  QJKJTabBarController.m
+//  QJKJBaseVC.m
 //  LYCModuleManager
 //
-//  Created by YouchengLi on 2016/12/19.
+//  Created by 史ios on 16/12/19.
 //  Copyright © 2016年 深圳市齐家互联网科技股份有限公司. All rights reserved.
 //
 
-#import "QJKJTabBarController.h"
+#import "QJKJBaseVC.h"
 
-#import "QJKJHomeVC.h"
-
-@interface QJKJTabBarController ()
-
-@property (nonatomic, strong) QJKJHomeVC *homeVC;
+@interface QJKJBaseVC ()
 
 @end
 
-@implementation QJKJTabBarController
+@implementation QJKJBaseVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initHome];
-    
-    
-}
-
-- (void)initHome {
-    QJKJHomeVC *homeVC = [[QJKJHomeVC alloc] init];
-    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    homeVC.navigationItem.title = @"首页";
-    homeNav.tabBarItem.title = @"首页";
-    
-    self.viewControllers = @[ homeNav ];
+    self.view.backgroundColor = [UIColor colorForClear];
 }
 
 - (void)didReceiveMemoryWarning {
