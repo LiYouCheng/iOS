@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		040DBE7E1E07CA6100D15EF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE7D1E07CA6100D15EF9 /* main.m */; };
-		040DBE811E07CA6100D15EF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE801E07CA6100D15EF9 /* AppDelegate.m */; };
-		040DBE841E07CA6100D15EF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE831E07CA6100D15EF9 /* ViewController.m */; };
-		040DBE871E07CA6100D15EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE851E07CA6100D15EF9 /* Main.storyboard */; };
 		040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE881E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld */; };
 		040DBE8C1E07CA6100D15EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */; };
 		040DBE8F1E07CA6100D15EF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE8D1E07CA6100D15EF9 /* LaunchScreen.storyboard */; };
 		040DBE9A1E07CA6100D15EF9 /* LYCModuleManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE991E07CA6100D15EF9 /* LYCModuleManagerTests.m */; };
 		040DBEA51E07CA6100D15EF9 /* LYCModuleManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBEA41E07CA6100D15EF9 /* LYCModuleManagerUITests.m */; };
+		046AA5AF1E07D2C30097EC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AA5AE1E07D2C30097EC30 /* AppDelegate.m */; };
+		046AA5B41E07D48E0097EC30 /* QJKJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AA5B31E07D48E0097EC30 /* QJKJTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +37,6 @@
 /* Begin PBXFileReference section */
 		040DBE791E07CA6100D15EF9 /* LYCModuleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCModuleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DBE7D1E07CA6100D15EF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		040DBE7F1E07CA6100D15EF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		040DBE801E07CA6100D15EF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		040DBE821E07CA6100D15EF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		040DBE831E07CA6100D15EF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		040DBE861E07CA6100D15EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040DBE891E07CA6100D15EF9 /* LYCModuleManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LYCModuleManager.xcdatamodel; sourceTree = "<group>"; };
 		040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040DBE8E1E07CA6100D15EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +47,16 @@
 		040DBEA01E07CA6100D15EF9 /* LYCModuleManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYCModuleManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DBEA41E07CA6100D15EF9 /* LYCModuleManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCModuleManagerUITests.m; sourceTree = "<group>"; };
 		040DBEA61E07CA6100D15EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046AA5AD1E07D2C30097EC30 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		046AA5AE1E07D2C30097EC30 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		046AA5B11E07D37A0097EC30 /* LYCPch.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCPch.pch; sourceTree = "<group>"; };
+		046AA5B21E07D48E0097EC30 /* QJKJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJTabBarController.h; sourceTree = "<group>"; };
+		046AA5B31E07D48E0097EC30 /* QJKJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJTabBarController.m; sourceTree = "<group>"; };
+		046AA5B51E07D64D0097EC30 /* LYCAppConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCAppConfigMacro.h; sourceTree = "<group>"; };
+		046AA5B61E07D6630097EC30 /* LYCUtilMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCUtilMacro.h; sourceTree = "<group>"; };
+		046AA5B71E07D67C0097EC30 /* LYCHeadMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCHeadMacro.h; sourceTree = "<group>"; };
+		046AA5B81E07D68F0097EC30 /* LYCNotifactionNameMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCNotifactionNameMacro.h; sourceTree = "<group>"; };
+		046AA5B91E07D6B50097EC30 /* LYCUrlMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCUrlMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,12 @@
 		040DBE7B1E07CA6100D15EF9 /* LYCModuleManager */ = {
 			isa = PBXGroup;
 			children = (
-				040DBE7F1E07CA6100D15EF9 /* AppDelegate.h */,
-				040DBE801E07CA6100D15EF9 /* AppDelegate.m */,
-				040DBE821E07CA6100D15EF9 /* ViewController.h */,
-				040DBE831E07CA6100D15EF9 /* ViewController.m */,
-				040DBE851E07CA6100D15EF9 /* Main.storyboard */,
+				046AA5941E07D1E60097EC30 /* Category(拓展) */,
+				046AA5951E07D1E60097EC30 /* Macro(宏) */,
+				046AA5961E07D1E60097EC30 /* Module(模块) */,
+				046AA5AA1E07D1E60097EC30 /* Other(其它) */,
+				046AA5AB1E07D1E60097EC30 /* Resource(资源) */,
+				046AA5AC1E07D1E60097EC30 /* Vendor(第三方) */,
 				040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */,
 				040DBE8D1E07CA6100D15EF9 /* LaunchScreen.storyboard */,
 				040DBE901E07CA6100D15EF9 /* Info.plist */,
@@ -141,6 +146,222 @@
 				040DBEA61E07CA6100D15EF9 /* Info.plist */,
 			);
 			path = LYCModuleManagerUITests;
+			sourceTree = "<group>";
+		};
+		046AA5941E07D1E60097EC30 /* Category(拓展) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Category(拓展)";
+			path = Category;
+			sourceTree = "<group>";
+		};
+		046AA5951E07D1E60097EC30 /* Macro(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				046AA5B11E07D37A0097EC30 /* LYCPch.pch */,
+				046AA5B51E07D64D0097EC30 /* LYCAppConfigMacro.h */,
+				046AA5B61E07D6630097EC30 /* LYCUtilMacro.h */,
+				046AA5B71E07D67C0097EC30 /* LYCHeadMacro.h */,
+				046AA5B81E07D68F0097EC30 /* LYCNotifactionNameMacro.h */,
+				046AA5B91E07D6B50097EC30 /* LYCUrlMacro.h */,
+			);
+			name = "Macro(宏)";
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		046AA5961E07D1E60097EC30 /* Module(模块) */ = {
+			isa = PBXGroup;
+			children = (
+				046AA5971E07D1E60097EC30 /* BasicModule(基本模块) */,
+				046AA5A91E07D1E60097EC30 /* MainModule(主要模块) */,
+			);
+			name = "Module(模块)";
+			path = Module;
+			sourceTree = "<group>";
+		};
+		046AA5971E07D1E60097EC30 /* BasicModule(基本模块) */ = {
+			isa = PBXGroup;
+			children = (
+				046AA5981E07D1E60097EC30 /* PictureStore(图片库) */,
+				046AA5991E07D1E60097EC30 /* VCStore(控制器库) */,
+				046AA59D1E07D1E60097EC30 /* ViewStore(控件库) */,
+			);
+			name = "BasicModule(基本模块)";
+			path = BasicModule;
+			sourceTree = "<group>";
+		};
+		046AA5981E07D1E60097EC30 /* PictureStore(图片库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "PictureStore(图片库)";
+			path = PictureStore;
+			sourceTree = "<group>";
+		};
+		046AA5991E07D1E60097EC30 /* VCStore(控制器库) */ = {
+			isa = PBXGroup;
+			children = (
+				046AA59A1E07D1E60097EC30 /* Navigation(导航条) */,
+				046AA59B1E07D1E60097EC30 /* Tabbar */,
+				046AA59C1E07D1E60097EC30 /* VC */,
+			);
+			name = "VCStore(控制器库)";
+			path = VCStore;
+			sourceTree = "<group>";
+		};
+		046AA59A1E07D1E60097EC30 /* Navigation(导航条) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Navigation(导航条)";
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		046AA59B1E07D1E60097EC30 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				046AA5B21E07D48E0097EC30 /* QJKJTabBarController.h */,
+				046AA5B31E07D48E0097EC30 /* QJKJTabBarController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		046AA59C1E07D1E60097EC30 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		046AA59D1E07D1E60097EC30 /* ViewStore(控件库) */ = {
+			isa = PBXGroup;
+			children = (
+				046AA59E1E07D1E60097EC30 /* UIButton */,
+				046AA59F1E07D1E60097EC30 /* UICollectionView */,
+				046AA5A01E07D1E60097EC30 /* UIImageView */,
+				046AA5A11E07D1E60097EC30 /* UILabel */,
+				046AA5A21E07D1E60097EC30 /* UIScrollView */,
+				046AA5A31E07D1E60097EC30 /* UISwitch */,
+				046AA5A41E07D1E60097EC30 /* UITableView */,
+				046AA5A51E07D1E60097EC30 /* UITableViewCell */,
+				046AA5A61E07D1E60097EC30 /* UITextField */,
+				046AA5A71E07D1E60097EC30 /* UITextView */,
+				046AA5A81E07D1E60097EC30 /* UIView */,
+			);
+			name = "ViewStore(控件库)";
+			path = ViewStore;
+			sourceTree = "<group>";
+		};
+		046AA59E1E07D1E60097EC30 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		046AA59F1E07D1E60097EC30 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		046AA5A01E07D1E60097EC30 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		046AA5A11E07D1E60097EC30 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		046AA5A21E07D1E60097EC30 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		046AA5A31E07D1E60097EC30 /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		046AA5A41E07D1E60097EC30 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		046AA5A51E07D1E60097EC30 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		046AA5A61E07D1E60097EC30 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		046AA5A71E07D1E60097EC30 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		046AA5A81E07D1E60097EC30 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		046AA5A91E07D1E60097EC30 /* MainModule(主要模块) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "MainModule(主要模块)";
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		046AA5AA1E07D1E60097EC30 /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				046AA5AD1E07D2C30097EC30 /* AppDelegate.h */,
+				046AA5AE1E07D2C30097EC30 /* AppDelegate.m */,
+			);
+			name = "Other(其它)";
+			path = Other;
+			sourceTree = "<group>";
+		};
+		046AA5AB1E07D1E60097EC30 /* Resource(资源) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Resource(资源)";
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		046AA5AC1E07D1E60097EC30 /* Vendor(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Vendor(第三方)";
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +475,6 @@
 			files = (
 				040DBE8F1E07CA6100D15EF9 /* LaunchScreen.storyboard in Resources */,
 				040DBE8C1E07CA6100D15EF9 /* Assets.xcassets in Resources */,
-				040DBE871E07CA6100D15EF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +499,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040DBE841E07CA6100D15EF9 /* ViewController.m in Sources */,
-				040DBE811E07CA6100D15EF9 /* AppDelegate.m in Sources */,
 				040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */,
+				046AA5B41E07D48E0097EC30 /* QJKJTabBarController.m in Sources */,
 				040DBE7E1E07CA6100D15EF9 /* main.m in Sources */,
+				046AA5AF1E07D2C30097EC30 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +538,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		040DBE851E07CA6100D15EF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040DBE861E07CA6100D15EF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		040DBE8D1E07CA6100D15EF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,7 +644,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LYCModuleManager/Macro/LYCPch.pch;
 				INFOPLIST_FILE = LYCModuleManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +659,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LYCModuleManager/Macro/LYCPch.pch;
 				INFOPLIST_FILE = LYCModuleManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +738,7 @@
 				040DBEAB1E07CA6100D15EF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		040DBEAC1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +747,7 @@
 				040DBEAE1E07CA6100D15EF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		040DBEAF1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +756,7 @@
 				040DBEB11E07CA6100D15EF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

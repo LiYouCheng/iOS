@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  LYCUrlMacro.h
 //  LYCModuleManager
 //
 //  Created by YouchengLi on 2016/12/19.
 //  Copyright © 2016年 深圳市齐家互联网科技股份有限公司. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef LYCUrlMacro_h
+#define LYCUrlMacro_h
 
-@interface ViewController : UIViewController
 
-
-@end
-
+#endif /* LYCUrlMacro_h */

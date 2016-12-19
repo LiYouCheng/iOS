@@ -8,7 +8,12 @@
 
 #import "AppDelegate.h"
 
+#import "QJKJTabBarController.h"
+
 @interface AppDelegate ()
+
+//主控制器
+@property (nonatomic, strong) QJKJTabBarController *tabBarController;
 
 @end
 
@@ -18,6 +23,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
+}
+
+#pragma mark - CustomMethond
+
+- (void)initTabBarControler {
+    QJKJTabBarController *tabBar = [[QJKJTabBarController alloc] init];
+    self.tabBarController = tabBar;
+    
+//    [UIScreen mainScreen].bounds.size.width
+//[UIScreen mainScreen].bounds.size.height
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.
 }
 
 

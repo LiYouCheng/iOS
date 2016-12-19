@@ -1,0 +1,23 @@
+//
+//  LYCPch.pch
+//  LYCModuleManager
+//
+//  Created by YouchengLi on 2016/12/19.
+//  Copyright © 2016年 深圳市齐家互联网科技股份有限公司. All rights reserved.
+//
+
+#ifndef LYCPch_pch
+#define LYCPch_pch
+
+//计算相关
+#import "LYCUtilMacro.h"
+//配置相关
+#import "LYCAppConfigMacro.h"
+//头文件相关
+#import "LYCHeadMacro.h"
+//通知相关
+#import "LYCNotifactionNameMacro.h"
+//请求地址相关
+#import "LYCUrlMacro.h"
+
+#endif /* LYCPch_pch */
