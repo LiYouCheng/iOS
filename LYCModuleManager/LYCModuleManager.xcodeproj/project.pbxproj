@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040DBE7E1E07CA6100D15EF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE7D1E07CA6100D15EF9 /* main.m */; };
+		040DBE811E07CA6100D15EF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE801E07CA6100D15EF9 /* AppDelegate.m */; };
+		040DBE841E07CA6100D15EF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE831E07CA6100D15EF9 /* ViewController.m */; };
+		040DBE871E07CA6100D15EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE851E07CA6100D15EF9 /* Main.storyboard */; };
+		040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE881E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld */; };
+		040DBE8C1E07CA6100D15EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */; };
+		040DBE8F1E07CA6100D15EF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE8D1E07CA6100D15EF9 /* LaunchScreen.storyboard */; };
+		040DBE9A1E07CA6100D15EF9 /* LYCModuleManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE991E07CA6100D15EF9 /* LYCModuleManagerTests.m */; };
+		040DBEA51E07CA6100D15EF9 /* LYCModuleManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBEA41E07CA6100D15EF9 /* LYCModuleManagerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		040DBE961E07CA6100D15EF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040DBE711E07CA6100D15EF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040DBE781E07CA6100D15EF9;
+			remoteInfo = LYCModuleManager;
+		};
+		040DBEA11E07CA6100D15EF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040DBE711E07CA6100D15EF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040DBE781E07CA6100D15EF9;
+			remoteInfo = LYCModuleManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040DBE791E07CA6100D15EF9 /* LYCModuleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCModuleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040DBE7D1E07CA6100D15EF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040DBE7F1E07CA6100D15EF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		040DBE801E07CA6100D15EF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		040DBE821E07CA6100D15EF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		040DBE831E07CA6100D15EF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		040DBE861E07CA6100D15EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040DBE891E07CA6100D15EF9 /* LYCModuleManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LYCModuleManager.xcdatamodel; sourceTree = "<group>"; };
+		040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		040DBE8E1E07CA6100D15EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		040DBE901E07CA6100D15EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040DBE951E07CA6100D15EF9 /* LYCModuleManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYCModuleManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040DBE991E07CA6100D15EF9 /* LYCModuleManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCModuleManagerTests.m; sourceTree = "<group>"; };
+		040DBE9B1E07CA6100D15EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040DBEA01E07CA6100D15EF9 /* LYCModuleManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYCModuleManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040DBEA41E07CA6100D15EF9 /* LYCModuleManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCModuleManagerUITests.m; sourceTree = "<group>"; };
+		040DBEA61E07CA6100D15EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040DBE761E07CA6100D15EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DBE921E07CA6100D15EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DBE9D1E07CA6100D15EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040DBE701E07CA6100D15EF9 = {
+			isa = PBXGroup;
+			children = (
+				040DBE7B1E07CA6100D15EF9 /* LYCModuleManager */,
+				040DBE981E07CA6100D15EF9 /* LYCModuleManagerTests */,
+				040DBEA31E07CA6100D15EF9 /* LYCModuleManagerUITests */,
+				040DBE7A1E07CA6100D15EF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		040DBE7A1E07CA6100D15EF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040DBE791E07CA6100D15EF9 /* LYCModuleManager.app */,
+				040DBE951E07CA6100D15EF9 /* LYCModuleManagerTests.xctest */,
+				040DBEA01E07CA6100D15EF9 /* LYCModuleManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040DBE7B1E07CA6100D15EF9 /* LYCModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				040DBE7F1E07CA6100D15EF9 /* AppDelegate.h */,
+				040DBE801E07CA6100D15EF9 /* AppDelegate.m */,
+				040DBE821E07CA6100D15EF9 /* ViewController.h */,
+				040DBE831E07CA6100D15EF9 /* ViewController.m */,
+				040DBE851E07CA6100D15EF9 /* Main.storyboard */,
+				040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */,
+				040DBE8D1E07CA6100D15EF9 /* LaunchScreen.storyboard */,
+				040DBE901E07CA6100D15EF9 /* Info.plist */,
+				040DBE881E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld */,
+				040DBE7C1E07CA6100D15EF9 /* Supporting Files */,
+			);
+			path = LYCModuleManager;
+			sourceTree = "<group>";
+		};
+		040DBE7C1E07CA6100D15EF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040DBE7D1E07CA6100D15EF9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		040DBE981E07CA6100D15EF9 /* LYCModuleManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				040DBE991E07CA6100D15EF9 /* LYCModuleManagerTests.m */,
+				040DBE9B1E07CA6100D15EF9 /* Info.plist */,
+			);
+			path = LYCModuleManagerTests;
+			sourceTree = "<group>";
+		};
+		040DBEA31E07CA6100D15EF9 /* LYCModuleManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				040DBEA41E07CA6100D15EF9 /* LYCModuleManagerUITests.m */,
+				040DBEA61E07CA6100D15EF9 /* Info.plist */,
+			);
+			path = LYCModuleManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040DBE781E07CA6100D15EF9 /* LYCModuleManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040DBEA91E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManager" */;
+			buildPhases = (
+				040DBE751E07CA6100D15EF9 /* Sources */,
+				040DBE761E07CA6100D15EF9 /* Frameworks */,
+				040DBE771E07CA6100D15EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYCModuleManager;
+			productName = LYCModuleManager;
+			productReference = 040DBE791E07CA6100D15EF9 /* LYCModuleManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		040DBE941E07CA6100D15EF9 /* LYCModuleManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040DBEAC1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerTests" */;
+			buildPhases = (
+				040DBE911E07CA6100D15EF9 /* Sources */,
+				040DBE921E07CA6100D15EF9 /* Frameworks */,
+				040DBE931E07CA6100D15EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040DBE971E07CA6100D15EF9 /* PBXTargetDependency */,
+			);
+			name = LYCModuleManagerTests;
+			productName = LYCModuleManagerTests;
+			productReference = 040DBE951E07CA6100D15EF9 /* LYCModuleManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		040DBE9F1E07CA6100D15EF9 /* LYCModuleManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040DBEAF1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerUITests" */;
+			buildPhases = (
+				040DBE9C1E07CA6100D15EF9 /* Sources */,
+				040DBE9D1E07CA6100D15EF9 /* Frameworks */,
+				040DBE9E1E07CA6100D15EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040DBEA21E07CA6100D15EF9 /* PBXTargetDependency */,
+			);
+			name = LYCModuleManagerUITests;
+			productName = LYCModuleManagerUITests;
+			productReference = 040DBEA01E07CA6100D15EF9 /* LYCModuleManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040DBE711E07CA6100D15EF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "深圳市齐家互联网科技股份有限公司";
+				TargetAttributes = {
+					040DBE781E07CA6100D15EF9 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7LPWK7MV6D;
+						ProvisioningStyle = Automatic;
+					};
+					040DBE941E07CA6100D15EF9 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7LPWK7MV6D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 040DBE781E07CA6100D15EF9;
+					};
+					040DBE9F1E07CA6100D15EF9 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7LPWK7MV6D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 040DBE781E07CA6100D15EF9;
+					};
+				};
+			};
+			buildConfigurationList = 040DBE741E07CA6100D15EF9 /* Build configuration list for PBXProject "LYCModuleManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040DBE701E07CA6100D15EF9;
+			productRefGroup = 040DBE7A1E07CA6100D15EF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040DBE781E07CA6100D15EF9 /* LYCModuleManager */,
+				040DBE941E07CA6100D15EF9 /* LYCModuleManagerTests */,
+				040DBE9F1E07CA6100D15EF9 /* LYCModuleManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040DBE771E07CA6100D15EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DBE8F1E07CA6100D15EF9 /* LaunchScreen.storyboard in Resources */,
+				040DBE8C1E07CA6100D15EF9 /* Assets.xcassets in Resources */,
+				040DBE871E07CA6100D15EF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DBE931E07CA6100D15EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DBE9E1E07CA6100D15EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040DBE751E07CA6100D15EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DBE841E07CA6100D15EF9 /* ViewController.m in Sources */,
+				040DBE811E07CA6100D15EF9 /* AppDelegate.m in Sources */,
+				040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */,
+				040DBE7E1E07CA6100D15EF9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DBE911E07CA6100D15EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DBE9A1E07CA6100D15EF9 /* LYCModuleManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DBE9C1E07CA6100D15EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DBEA51E07CA6100D15EF9 /* LYCModuleManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040DBE971E07CA6100D15EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040DBE781E07CA6100D15EF9 /* LYCModuleManager */;
+			targetProxy = 040DBE961E07CA6100D15EF9 /* PBXContainerItemProxy */;
+		};
+		040DBEA21E07CA6100D15EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040DBE781E07CA6100D15EF9 /* LYCModuleManager */;
+			targetProxy = 040DBEA11E07CA6100D15EF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		040DBE851E07CA6100D15EF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040DBE861E07CA6100D15EF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		040DBE8D1E07CA6100D15EF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040DBE8E1E07CA6100D15EF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040DBEA71E07CA6100D15EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040DBEA81E07CA6100D15EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040DBEAA1E07CA6100D15EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				INFOPLIST_FILE = LYCModuleManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		040DBEAB1E07CA6100D15EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				INFOPLIST_FILE = LYCModuleManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		040DBEAD1E07CA6100D15EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				INFOPLIST_FILE = LYCModuleManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYCModuleManager.app/LYCModuleManager";
+			};
+			name = Debug;
+		};
+		040DBEAE1E07CA6100D15EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				INFOPLIST_FILE = LYCModuleManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYCModuleManager.app/LYCModuleManager";
+			};
+			name = Release;
+		};
+		040DBEB01E07CA6100D15EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				INFOPLIST_FILE = LYCModuleManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LYCModuleManager;
+			};
+			name = Debug;
+		};
+		040DBEB11E07CA6100D15EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				INFOPLIST_FILE = LYCModuleManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LYCModuleManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040DBE741E07CA6100D15EF9 /* Build configuration list for PBXProject "LYCModuleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040DBEA71E07CA6100D15EF9 /* Debug */,
+				040DBEA81E07CA6100D15EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040DBEA91E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040DBEAA1E07CA6100D15EF9 /* Debug */,
+				040DBEAB1E07CA6100D15EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		040DBEAC1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040DBEAD1E07CA6100D15EF9 /* Debug */,
+				040DBEAE1E07CA6100D15EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		040DBEAF1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040DBEB01E07CA6100D15EF9 /* Debug */,
+				040DBEB11E07CA6100D15EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		040DBE881E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				040DBE891E07CA6100D15EF9 /* LYCModuleManager.xcdatamodel */,
+			);
+			currentVersion = 040DBE891E07CA6100D15EF9 /* LYCModuleManager.xcdatamodel */;
+			path = LYCModuleManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 040DBE711E07CA6100D15EF9 /* Project object */;
+}
