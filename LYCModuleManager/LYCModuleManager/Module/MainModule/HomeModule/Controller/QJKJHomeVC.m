@@ -12,9 +12,10 @@
 
 @interface QJKJHomeVC () {
     UIButton *_button;
+    NSArray *_contentArray;
 }
 
-@property (nonatomic, strong) LSDropBoxView *dropBoxView;
+//@property (nonatomic, strong) LSDropBoxView *dropBoxView;
 
 @end
 
@@ -23,6 +24,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _contentArray = @[
+                      @{@"icon":@"消息",
+                        @"name": @"消息中心"},
+                      @{@"icon":@"仓库",
+                        @"name": @"仓库中心"},
+                      @{@"icon":@"消息",
+                        @"name": @"消息中心"},
+                      @{@"icon":@"仓库",
+                        @"name": @"仓库中心"},
+                      ];
     
     self.view.backgroundColor = [UIColor greenColor];
     
@@ -33,38 +44,61 @@
     [button setTitle:@"展开" forState:UIControlStateNormal];
     [self.view addSubview:button];
     _button = button;
+    
+    
 }
 
 - (void)clickedDropBox:(UIButton *)btn {
     btn.selected = !btn.selected;
     
-    self.dropBoxView.countBlock = ^(void){
-        return 4;
-    };
-    self.dropBoxView.imageBlock = ^(NSInteger row){
-        return @"icon";
-    };
-    self.dropBoxView.nameBlock = ^(NSInteger row){
-        return @"测试你的";
-    };
-    self.dropBoxView.selectBlock = ^(NSInteger row){
+//    //使用方式一、数据全自定义
+//    __block NSInteger count = 0;
+//    __weak NSArray *contentArray = _contentArray;
+//    self.dropBoxView.countBlock = ^(void){
+//        count = contentArray.count;
+//        return count;
+//    };
+//    
+//    __block NSString *iconStr = @"";
+//    self.dropBoxView.imageBlock = ^(NSInteger row){
+//        if (row < contentArray.count && row >= 0) {
+//            NSDictionary *dict = contentArray[row];
+//            iconStr = dict[@"icon"] ? dict[@"icon"] : @"";
+//            
+//        }
+//        return iconStr;
+//    };
+//    
+//    __block NSString *nameStr = @"";
+//    self.dropBoxView.nameBlock = ^(NSInteger row){
+//        if (row < contentArray.count && row >= 0) {
+//            NSDictionary *dict = contentArray[row];
+//            nameStr = dict[@"name"] ? dict[@"name"] : @"";
+//            
+//        }
+//        return nameStr;
+//    };
+    
+    _contentArray = @[
+                      @{@"icon":@"消息",
+                        @"name": @"消息中心"},
+                      @{@"icon":@"仓库",
+                        @"name": @"仓库中心"},
+                      @{@"icon":@"消息",
+                        @"name": @"消息中心"},
+                      @{@"icon":@"仓库",
+                        @"name": @"仓库中心"},
+                      ];
+    
+    LSDropBoxView *dropBoxView = [[LSDropBoxView alloc] init];
+    dropBoxView.contentArray = _contentArray;
+    dropBoxView.selectBlock = ^(NSInteger row){
         NSLog(@"选择某行 %zd",row);
     };
-    
-    [self.dropBoxView showDropBox];
+    [dropBoxView showDropBox];
 }
 
-/**
- *  下拉框
- *
- *  @return return value description
- */
-- (LSDropBoxView *)dropBoxView {
-    if (!_dropBoxView) {
-        _dropBoxView = [[LSDropBoxView alloc] init];
-    }
-    return _dropBoxView;
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-typedef int(^LSDropGBoxCountBlock)(void);
+typedef NSInteger(^LSDropGBoxCountBlock)(void);
 typedef NSString*(^LSDropGBoxImageBlock)(NSInteger row);
 typedef NSString*(^LSDropGBoxNameBlock)(NSInteger row);
+
 typedef void(^LSDropBoxSelect)(NSInteger row);
 
 @interface LSDropBoxView : UIView
+
+#pragma makr - 以下两种配置方法任选其一
+
+#pragma mark - 初始化配置方法一
 
 /**
  *  某行的图片名
@@ -27,13 +32,24 @@ typedef void(^LSDropBoxSelect)(NSInteger row);
  *  多少行
  */
 @property (nonatomic, strong) LSDropGBoxCountBlock countBlock;
+
+#pragma mark - 初始化配置方法二
+
+
+/**
+ 内容配置 格式例子：@[ @{@"icon": @"", @"name": @""}  ]
+ */
+@property (nonatomic, copy) NSArray *contentArray;
+
+#pragma mark - 结果使用
+
 /**
  *  选择某行
  */
 @property (nonatomic, strong) LSDropBoxSelect selectBlock;
 
 
-#pragma mark 方法
+#pragma mark - 显示和隐藏
 
 /**
  *  显示下拉框
