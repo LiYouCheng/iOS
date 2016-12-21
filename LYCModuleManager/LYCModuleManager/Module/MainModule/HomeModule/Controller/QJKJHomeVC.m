@@ -10,7 +10,11 @@
 
 #import "LSDropBoxView.h"
 
-@interface QJKJHomeVC () {
+#import "QJKJTextView.h"
+
+
+@interface QJKJHomeVC ()
+<UITextViewDelegate> {
     UIButton *_button;
     NSArray *_contentArray;
 }
@@ -21,29 +25,45 @@
 
 @implementation QJKJHomeVC
 
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    DLog(@"开始编辑");
+}
+
+- (void)notificationChange:(NSNotification *)noti {
+    UITextView *textView = noti.object;
+    DLog(@"text = %@",textView.text);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _contentArray = @[
-                      @{@"icon":@"消息",
-                        @"name": @"消息中心"},
-                      @{@"icon":@"仓库",
-                        @"name": @"仓库中心"},
-                      @{@"icon":@"消息",
-                        @"name": @"消息中心"},
-                      @{@"icon":@"仓库",
-                        @"name": @"仓库中心"},
-                      ];
+    QJKJTextView *textView = [[QJKJTextView alloc] initWithFrame:CGRectMake(10, 100, 200, 200)];
+    textView.backgroundColor = [UIColor greenColor];
+    textView.delegate = self;
+    textView.placeholder = @"文本填充";
+    [self.view addSubview:textView];
     
-    self.view.backgroundColor = [UIColor greenColor];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(50, 100, 100, 50);
-    button.backgroundColor = [UIColor blueColor];
-    [button addTarget:self action:@selector(clickedDropBox:) forControlEvents:UIControlEventTouchUpInside];
-    [button setTitle:@"展开" forState:UIControlStateNormal];
-    [self.view addSubview:button];
-    _button = button;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationChange:) name:UITextViewTextDidChangeNotification object:nil];
+//    _contentArray = @[
+//                      @{@"icon":@"消息",
+//                        @"name": @"消息中心"},
+//                      @{@"icon":@"仓库",
+//                        @"name": @"仓库中心"},
+//                      @{@"icon":@"消息",
+//                        @"name": @"消息中心"},
+//                      @{@"icon":@"仓库",
+//                        @"name": @"仓库中心"},
+//                      ];
+//    
+//    self.view.backgroundColor = [UIColor greenColor];
+//    
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(50, 100, 100, 50);
+//    button.backgroundColor = [UIColor blueColor];
+//    [button addTarget:self action:@selector(clickedDropBox:) forControlEvents:UIControlEventTouchUpInside];
+//    [button setTitle:@"展开" forState:UIControlStateNormal];
+//    [self.view addSubview:button];
+//    _button = button;
     
     
 }
