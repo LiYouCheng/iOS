@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0409BABB1E0BC6EC00713310 /* LSDateSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409BABA1E0BC6EC00713310 /* LSDateSelectView.m */; };
 		040DBE7E1E07CA6100D15EF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE7D1E07CA6100D15EF9 /* main.m */; };
 		040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040DBE881E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld */; };
 		040DBE8C1E07CA6100D15EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040DBE8B1E07CA6100D15EF9 /* Assets.xcassets */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0409BAB91E0BC6EC00713310 /* LSDateSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDateSelectView.h; sourceTree = "<group>"; };
+		0409BABA1E0BC6EC00713310 /* LSDateSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDateSelectView.m; sourceTree = "<group>"; };
 		040DBE791E07CA6100D15EF9 /* LYCModuleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCModuleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040DBE7D1E07CA6100D15EF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		040DBE891E07CA6100D15EF9 /* LYCModuleManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LYCModuleManager.xcdatamodel; sourceTree = "<group>"; };
@@ -136,6 +139,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0409BAB81E0BC6BB00713310 /* DateSelect(选择时间) */ = {
+			isa = PBXGroup;
+			children = (
+				0409BAB91E0BC6EC00713310 /* LSDateSelectView.h */,
+				0409BABA1E0BC6EC00713310 /* LSDateSelectView.m */,
+			);
+			name = "DateSelect(选择时间)";
+			path = DateSelect;
+			sourceTree = "<group>";
+		};
 		040DBE701E07CA6100D15EF9 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +250,7 @@
 		046AA5971E07D1E60097EC30 /* BasicModule(基本模块) */ = {
 			isa = PBXGroup;
 			children = (
+				0409BAB81E0BC6BB00713310 /* DateSelect(选择时间) */,
 				12CBC4D81E082474007C7850 /* DropBox(下拉框) */,
 				046AA5981E07D1E60097EC30 /* PictureStore(图片库) */,
 				046AA5991E07D1E60097EC30 /* VCStore(控制器库) */,
@@ -663,6 +677,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0409BABB1E0BC6EC00713310 /* LSDateSelectView.m in Sources */,
 				12CBC4DB1E0824BC007C7850 /* LSDropBoxView.m in Sources */,
 				12CBC4AA1E080D96007C7850 /* UIFont+QJKJHelper.m in Sources */,
 				12CBC4C81E0822CE007C7850 /* QJKJScrollView.m in Sources */,
