@@ -9,6 +9,7 @@
 #import "QJKJHomeVC.h"
 
 #import "LSDropBoxView.h"
+#import "LSDateSelectView.h"
 
 #import "QJKJTextView.h"
 
@@ -19,19 +20,19 @@
     NSArray *_contentArray;
 }
 
+@property (nonatomic, strong) LSDateSelectView *dateSelectView;
+
 //@property (nonatomic, strong) LSDropBoxView *dropBoxView;
 
 @end
 
 @implementation QJKJHomeVC
 
-- (void)textViewDidBeginEditing:(UITextView *)textView {
-    DLog(@"开始编辑");
-}
-
-- (void)notificationChange:(NSNotification *)noti {
-    UITextView *textView = noti.object;
-    DLog(@"text = %@",textView.text);
+- (LSDateSelectView *)dateSelectView {
+    if (!_dateSelectView) {
+        _dateSelectView = [[LSDateSelectView alloc] init];
+    }
+    return _dateSelectView;
 }
 
 - (void)viewDidLoad {
@@ -69,7 +70,18 @@
 }
 
 - (void)clickedDropBox:(UIButton *)btn {
-    btn.selected = !btn.selected;
+    
+    self.dateSelectView.sureBlock = ^(NSInteger timeInterval){
+        NSLog(@"需要的时间 %d",timeInterval);
+    };
+    
+    self.dateSelectView.minDateString = @"2016-12-20";
+    self.dateSelectView.maxDateString = @"2016-12-24";
+    
+    [self.dateSelectView showDate];
+    
+    
+//    btn.selected = !btn.selected;
     
 //    //使用方式一、数据全自定义
 //    __block NSInteger count = 0;
@@ -99,23 +111,23 @@
 //        return nameStr;
 //    };
     
-    _contentArray = @[
-                      @{@"icon":@"消息",
-                        @"name": @"消息中心"},
-                      @{@"icon":@"仓库",
-                        @"name": @"仓库中心"},
-                      @{@"icon":@"消息",
-                        @"name": @"消息中心"},
-                      @{@"icon":@"仓库",
-                        @"name": @"仓库中心"},
-                      ];
-    
-    LSDropBoxView *dropBoxView = [[LSDropBoxView alloc] init];
-    dropBoxView.contentArray = _contentArray;
-    dropBoxView.selectBlock = ^(NSInteger row){
-        NSLog(@"选择某行 %zd",row);
-    };
-    [dropBoxView showDropBox];
+//    _contentArray = @[
+//                      @{@"icon":@"消息",
+//                        @"name": @"消息中心"},
+//                      @{@"icon":@"仓库",
+//                        @"name": @"仓库中心"},
+//                      @{@"icon":@"消息",
+//                        @"name": @"消息中心"},
+//                      @{@"icon":@"仓库",
+//                        @"name": @"仓库中心"},
+//                      ];
+//    
+//    LSDropBoxView *dropBoxView = [[LSDropBoxView alloc] init];
+//    dropBoxView.contentArray = _contentArray;
+//    dropBoxView.selectBlock = ^(NSInteger row){
+//        NSLog(@"选择某行 %zd",row);
+//    };
+//    [dropBoxView showDropBox];
 }
 
 
