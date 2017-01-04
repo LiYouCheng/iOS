@@ -15,6 +15,11 @@
 		040DBEA51E07CA6100D15EF9 /* LYCModuleManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DBEA41E07CA6100D15EF9 /* LYCModuleManagerUITests.m */; };
 		046AA5AF1E07D2C30097EC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AA5AE1E07D2C30097EC30 /* AppDelegate.m */; };
 		046AA5B41E07D48E0097EC30 /* QJKJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AA5B31E07D48E0097EC30 /* QJKJTabBarController.m */; };
+		123640B41E1D261300B7D371 /* QJKJChatModuleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B31E1D261300B7D371 /* QJKJChatModuleVC.m */; };
+		123640B71E1D266A00B7D371 /* QJKJChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B61E1D266A00B7D371 /* QJKJChatInputView.m */; };
+		123640BA1E1D2D0400B7D371 /* QJKJNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B91E1D2D0400B7D371 /* QJKJNavigationVC.m */; };
+		123640BD1E1D334200B7D371 /* QJKJChatFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640BC1E1D334200B7D371 /* QJKJChatFaceView.m */; };
+		123640C01E1D3CE300B7D371 /* QJKJChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640BF1E1D3CE300B7D371 /* QJKJChatMoreView.m */; };
 		12CBC4A21E080B25007C7850 /* QJKJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4A11E080B25007C7850 /* QJKJTextView.m */; };
 		12CBC4A51E080C2C007C7850 /* QJKJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4A41E080C2C007C7850 /* QJKJLabel.m */; };
 		12CBC4AA1E080D96007C7850 /* UIFont+QJKJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4A91E080D96007C7850 /* UIFont+QJKJHelper.m */; };
@@ -76,6 +81,16 @@
 		046AA5B71E07D67C0097EC30 /* LYCHeadMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCHeadMacro.h; sourceTree = "<group>"; };
 		046AA5B81E07D68F0097EC30 /* LYCNotifactionNameMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCNotifactionNameMacro.h; sourceTree = "<group>"; };
 		046AA5B91E07D6B50097EC30 /* LYCUrlMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCUrlMacro.h; sourceTree = "<group>"; };
+		123640B21E1D261300B7D371 /* QJKJChatModuleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatModuleVC.h; sourceTree = "<group>"; };
+		123640B31E1D261300B7D371 /* QJKJChatModuleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatModuleVC.m; sourceTree = "<group>"; };
+		123640B51E1D266A00B7D371 /* QJKJChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatInputView.h; sourceTree = "<group>"; };
+		123640B61E1D266A00B7D371 /* QJKJChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatInputView.m; sourceTree = "<group>"; };
+		123640B81E1D2D0400B7D371 /* QJKJNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJNavigationVC.h; sourceTree = "<group>"; };
+		123640B91E1D2D0400B7D371 /* QJKJNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJNavigationVC.m; sourceTree = "<group>"; };
+		123640BB1E1D334200B7D371 /* QJKJChatFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatFaceView.h; sourceTree = "<group>"; };
+		123640BC1E1D334200B7D371 /* QJKJChatFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatFaceView.m; sourceTree = "<group>"; };
+		123640BE1E1D3CE300B7D371 /* QJKJChatMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatMoreView.h; sourceTree = "<group>"; };
+		123640BF1E1D3CE300B7D371 /* QJKJChatMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatMoreView.m; sourceTree = "<group>"; };
 		12CBC4A01E080B25007C7850 /* QJKJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJTextView.h; sourceTree = "<group>"; };
 		12CBC4A11E080B25007C7850 /* QJKJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJTextView.m; sourceTree = "<group>"; };
 		12CBC4A31E080C2C007C7850 /* QJKJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJLabel.h; sourceTree = "<group>"; };
@@ -250,6 +265,7 @@
 		046AA5971E07D1E60097EC30 /* BasicModule(基本模块) */ = {
 			isa = PBXGroup;
 			children = (
+				123640AA1E1D259600B7D371 /* ChatModule(聊天) */,
 				0409BAB81E0BC6BB00713310 /* DateSelect(选择时间) */,
 				12CBC4D81E082474007C7850 /* DropBox(下拉框) */,
 				046AA5981E07D1E60097EC30 /* PictureStore(图片库) */,
@@ -282,6 +298,8 @@
 		046AA59A1E07D1E60097EC30 /* Navigation(导航条) */ = {
 			isa = PBXGroup;
 			children = (
+				123640B81E1D2D0400B7D371 /* QJKJNavigationVC.h */,
+				123640B91E1D2D0400B7D371 /* QJKJNavigationVC.m */,
 			);
 			name = "Navigation(导航条)";
 			path = Navigation;
@@ -458,6 +476,54 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
+		123640AA1E1D259600B7D371 /* ChatModule(聊天) */ = {
+			isa = PBXGroup;
+			children = (
+				123640AB1E1D259600B7D371 /* Controller */,
+				123640AC1E1D259600B7D371 /* Handler */,
+				123640AD1E1D259600B7D371 /* Model */,
+				123640AE1E1D259600B7D371 /* View */,
+			);
+			name = "ChatModule(聊天)";
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		123640AB1E1D259600B7D371 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				123640B21E1D261300B7D371 /* QJKJChatModuleVC.h */,
+				123640B31E1D261300B7D371 /* QJKJChatModuleVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		123640AC1E1D259600B7D371 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		123640AD1E1D259600B7D371 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		123640AE1E1D259600B7D371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				123640B51E1D266A00B7D371 /* QJKJChatInputView.h */,
+				123640B61E1D266A00B7D371 /* QJKJChatInputView.m */,
+				123640BB1E1D334200B7D371 /* QJKJChatFaceView.h */,
+				123640BC1E1D334200B7D371 /* QJKJChatFaceView.m */,
+				123640BE1E1D3CE300B7D371 /* QJKJChatMoreView.h */,
+				123640BF1E1D3CE300B7D371 /* QJKJChatMoreView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		12CBC4A61E080D00007C7850 /* FontCategory(字体) */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,7 +676,7 @@
 				TargetAttributes = {
 					040DBE781E07CA6100D15EF9 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 7LPWK7MV6D;
+						DevelopmentTeam = B58J9B3HCL;
 						ProvisioningStyle = Automatic;
 					};
 					040DBE941E07CA6100D15EF9 = {
@@ -679,19 +745,24 @@
 			files = (
 				0409BABB1E0BC6EC00713310 /* LSDateSelectView.m in Sources */,
 				12CBC4DB1E0824BC007C7850 /* LSDropBoxView.m in Sources */,
+				123640B41E1D261300B7D371 /* QJKJChatModuleVC.m in Sources */,
 				12CBC4AA1E080D96007C7850 /* UIFont+QJKJHelper.m in Sources */,
 				12CBC4C81E0822CE007C7850 /* QJKJScrollView.m in Sources */,
 				12CBC4A51E080C2C007C7850 /* QJKJLabel.m in Sources */,
+				123640BA1E1D2D0400B7D371 /* QJKJNavigationVC.m in Sources */,
 				12CBC4B11E081A36007C7850 /* UIView+QJKJBase.m in Sources */,
 				12CBC4B91E081FF8007C7850 /* QJKJBaseVC.m in Sources */,
 				040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */,
 				046AA5B41E07D48E0097EC30 /* QJKJTabBarController.m in Sources */,
+				123640B71E1D266A00B7D371 /* QJKJChatInputView.m in Sources */,
 				12CBC4BC1E082049007C7850 /* QJKJHomeVC.m in Sources */,
 				12CBC4C21E0822B8007C7850 /* QJKJCollectionView.m in Sources */,
+				123640BD1E1D334200B7D371 /* QJKJChatFaceView.m in Sources */,
 				12CBC4CE1E0822F0007C7850 /* QJKJTableView.m in Sources */,
 				12CBC4CB1E0822DB007C7850 /* QJKJSwitch.m in Sources */,
 				12CBC4D11E082306007C7850 /* QJKJTableViewCell.m in Sources */,
 				12CBC4D71E08234E007C7850 /* QJKJView.m in Sources */,
+				123640C01E1D3CE300B7D371 /* QJKJChatMoreView.m in Sources */,
 				040DBE7E1E07CA6100D15EF9 /* main.m in Sources */,
 				12CBC4C51E0822C2007C7850 /* QJKJButton.m in Sources */,
 				12CBC4BF1E0822A4007C7850 /* QJKJImageView.m in Sources */,
@@ -829,7 +900,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				DEVELOPMENT_TEAM = B58J9B3HCL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LYCModuleManager/Macro/LYCPch.pch;
 				INFOPLIST_FILE = LYCModuleManager/Info.plist;
@@ -844,7 +915,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7LPWK7MV6D;
+				DEVELOPMENT_TEAM = B58J9B3HCL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LYCModuleManager/Macro/LYCPch.pch;
 				INFOPLIST_FILE = LYCModuleManager/Info.plist;

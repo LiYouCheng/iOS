@@ -12,7 +12,7 @@
 #import "LSDateSelectView.h"
 
 #import "QJKJTextView.h"
-
+#import "QJKJChatModuleVC.h"
 
 @interface QJKJHomeVC ()
 <UITextViewDelegate> {
@@ -38,13 +38,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    QJKJTextView *textView = [[QJKJTextView alloc] initWithFrame:CGRectMake(10, 100, 200, 200)];
-    textView.backgroundColor = [UIColor greenColor];
-    textView.delegate = self;
-    textView.placeholder = @"文本填充";
-    [self.view addSubview:textView];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationChange:) name:UITextViewTextDidChangeNotification object:nil];
+    
+//    QJKJTextView *textView = [[QJKJTextView alloc] initWithFrame:CGRectMake(10, 100, 200, 200)];
+//    textView.backgroundColor = [UIColor greenColor];
+//    textView.delegate = self;
+//    textView.placeholder = @"文本填充";
+//    [self.view addSubview:textView];
+//    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationChange:) name:UITextViewTextDidChangeNotification object:nil];
 //    _contentArray = @[
 //                      @{@"icon":@"消息",
 //                        @"name": @"消息中心"},
@@ -58,12 +60,12 @@
 //    
 //    self.view.backgroundColor = [UIColor greenColor];
 //    
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    button.frame = CGRectMake(50, 100, 100, 50);
-//    button.backgroundColor = [UIColor blueColor];
-//    [button addTarget:self action:@selector(clickedDropBox:) forControlEvents:UIControlEventTouchUpInside];
-//    [button setTitle:@"展开" forState:UIControlStateNormal];
-//    [self.view addSubview:button];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(50, 100, 100, 50);
+    button.backgroundColor = [UIColor blueColor];
+    [button addTarget:self action:@selector(clickedDropBox:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"展开" forState:UIControlStateNormal];
+    [self.view addSubview:button];
 //    _button = button;
     
     
@@ -71,14 +73,17 @@
 
 - (void)clickedDropBox:(UIButton *)btn {
     
-    self.dateSelectView.sureBlock = ^(NSInteger timeInterval){
-        NSLog(@"需要的时间 %d",timeInterval);
-    };
-    
-    self.dateSelectView.minDateString = @"2016-12-20";
-    self.dateSelectView.maxDateString = @"2016-12-24";
-    
-    [self.dateSelectView showDate];
+    QJKJChatModuleVC *vc = [[QJKJChatModuleVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+//    self.dateSelectView.sureBlock = ^(NSInteger timeInterval){
+//        NSLog(@"需要的时间 %d",timeInterval);
+//    };
+//    
+//    self.dateSelectView.minDateString = @"2016-12-20";
+//    self.dateSelectView.maxDateString = @"2016-12-24";
+//    
+//    [self.dateSelectView showDate];
     
     
 //    btn.selected = !btn.selected;
