@@ -18,4 +18,21 @@
 }
 */
 
+- (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
+    
+    if (!self.dragging) {
+        [self.nextResponder touchesEnded: touches withEvent:event];
+    }
+    
+    [super touchesEnded: touches withEvent: event];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (!self.dragging) {
+        [self.nextResponder touchesBegan:touches withEvent:event];
+    }
+    
+    [super touchesBegan:touches withEvent:event];
+}
+
 @end

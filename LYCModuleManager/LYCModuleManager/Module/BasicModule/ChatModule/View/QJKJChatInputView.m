@@ -11,30 +11,60 @@
 #import "QJKJChatFaceView.h"
 #import "QJKJChatMoreView.h"
 
+#import "QJKJChatAudioInputView.h"
+
 #pragma mark - 位置信息
 //按钮宽度
 #define CHAT_BUTTON_WIDTH 44.f
 //左边空隙
-#define CHAT_LEFT_SPACE 10.f
+#define CHAT_LEFT_SPACE 0.f
 //右边空隙
-#define CHAT_RIGHT_SPACE 10.f
+#define CHAT_RIGHT_SPACE 0.f
+
+//输入框距离顶部距离
+#define CHAT_TEXTVIEW_TOP 10
+
+//输入工具最小高度
+#define CHAT_INPUT_HEIGHT_MIN 50.f
+//输入工具最大高度
+#define CHAT_INPUT_HEIGHT_MAX 90.f
+
+
+//更多键盘高度
+#define CHAT_MORE_INPUT_HEIGHT 190.f
+
+#pragma mark - 图片
+//语音图片
+#define CHAT_AUDIO_IMAGE @"chat_audio"
+//键盘图片
+#define CHAT_KEYBOARD_IMAGE @"chat_keyboard"
+//表情图片
+#define CHAT_EMOJI_IMAGE @"chat_emoji"
+//更多图片
+#define CHAT_MORE_IMAGE @"chat_more"
+
+#pragma mark - 提示信息
+//输入框提示文字
+#define CHAT_PLACEHOLDER_TEXT @"请输入聊天内容"
 
 @interface QJKJChatInputView ()
-<UITextViewDelegate>
+<UITextViewDelegate,
+QJKJChatFaceViewDelegate>
 
-@property (nonatomic, strong) QJKJChatFaceView *faceView;
-@property (nonatomic, strong) QJKJChatMoreView *moreView;
+
 @end
 
 @implementation QJKJChatInputView {
     
     
-    QJKJButton      *_audioButton;
-    QJKJTextView    *_contentTextView;
-    QJKJButton      *_contetnButton;
-    QJKJButton      *_emoijButton;
-    QJKJButton      *_moreButton;
- 
+    QJKJButton      *_audioButton;//语音
+    QJKJTextView    *_contentTextView;//输入框
+    QJKJButton      *_contentButton;//输入框按钮
+    QJKJButton      *_emojiButton;//表情
+    QJKJButton      *_moreButton;//更多
+    QJKJChatAudioInputView *_audioInputView;//语音输入
+    
+    QJKJChatInputType _currentInputType;//当前输入类型
     
 }
 
@@ -46,43 +76,146 @@
         
         _audioButton = [QJKJButton buttonWithType:UIButtonTypeCustom];
         _audioButton.frame = CGRectMake(CHAT_LEFT_SPACE, (self.height - CHAT_BUTTON_WIDTH) / 2.0, CHAT_BUTTON_WIDTH, CHAT_BUTTON_WIDTH);
-        _audioButton.backgroundColor = [UIColor greenColor];
-        [_audioButton setTitle:@"语音" forState:UIControlStateNormal];
-        [_audioButton setTitle:@"键盘" forState:UIControlStateSelected];
+        [_audioButton setImage:[UIImage imageNamed:CHAT_AUDIO_IMAGE] forState:UIControlStateNormal];
+        [_audioButton setImage:[UIImage imageNamed:CHAT_KEYBOARD_IMAGE] forState:UIControlStateSelected];
         [_audioButton addTarget:self action:@selector(clickedAudio:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_audioButton];
         
-        _emoijButton = [QJKJButton buttonWithType:UIButtonTypeCustom];
-        _emoijButton.frame = CGRectMake(self.width - (CHAT_RIGHT_SPACE + CHAT_BUTTON_WIDTH) - (CHAT_RIGHT_SPACE + CHAT_BUTTON_WIDTH), (self.height - CHAT_BUTTON_WIDTH) / 2.0, CHAT_BUTTON_WIDTH, CHAT_BUTTON_WIDTH);
-        _emoijButton.backgroundColor = [UIColor greenColor];
-        [_emoijButton setTitle:@"表情" forState:UIControlStateNormal];
-        [_emoijButton setTitle:@"键盘" forState:UIControlStateSelected];
-        [_emoijButton addTarget:self action:@selector(clickedEmoij:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:_emoijButton];
+        _emojiButton = [QJKJButton buttonWithType:UIButtonTypeCustom];
+        _emojiButton.frame = CGRectMake(self.width - (CHAT_RIGHT_SPACE + CHAT_BUTTON_WIDTH) - (CHAT_RIGHT_SPACE + CHAT_BUTTON_WIDTH), (self.height - CHAT_BUTTON_WIDTH) / 2.0, CHAT_BUTTON_WIDTH, CHAT_BUTTON_WIDTH);
+        [_emojiButton setImage:[UIImage imageNamed:CHAT_EMOJI_IMAGE] forState:UIControlStateNormal];
+        [_emojiButton setImage:[UIImage imageNamed:CHAT_KEYBOARD_IMAGE] forState:UIControlStateSelected];
+        [_emojiButton addTarget:self action:@selector(clickedEmoij:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_emojiButton];
         
         _moreButton = [QJKJButton buttonWithType:UIButtonTypeCustom];
-        _moreButton.frame = CGRectMake(_emoijButton.right + CHAT_LEFT_SPACE, (self.height - CHAT_BUTTON_WIDTH) / 2.0, CHAT_BUTTON_WIDTH, CHAT_BUTTON_WIDTH);
-        [_moreButton setTitle:@"更多" forState:UIControlStateNormal];
-        [_moreButton setTitle:@"键盘" forState:UIControlStateSelected];
-        _moreButton.backgroundColor = [UIColor greenColor];
+        _moreButton.frame = CGRectMake(_emojiButton.right + CHAT_LEFT_SPACE, (self.height - CHAT_BUTTON_WIDTH) / 2.0, CHAT_BUTTON_WIDTH, CHAT_BUTTON_WIDTH);
+        [_moreButton setImage:[UIImage imageNamed:CHAT_MORE_IMAGE] forState:UIControlStateNormal];
+        [_moreButton setImage:[UIImage imageNamed:CHAT_KEYBOARD_IMAGE] forState:UIControlStateSelected];
         [_moreButton addTarget:self action:@selector(clickedMore:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_moreButton];
         
-        _contentTextView = [[QJKJTextView alloc] initWithFrame:CGRectMake(_audioButton.right + CHAT_LEFT_SPACE, (self.height - CHAT_BUTTON_WIDTH) / 2.0, (_emoijButton.left - CHAT_LEFT_SPACE) - (_audioButton.right + CHAT_LEFT_SPACE), CHAT_BUTTON_WIDTH)];
-        _contentTextView.backgroundColor = [UIColor purpleColor];
+        _contentTextView = [[QJKJTextView alloc] initWithFrame:CGRectMake(_audioButton.right + CHAT_LEFT_SPACE, CHAT_TEXTVIEW_TOP, (_emojiButton.left - CHAT_LEFT_SPACE) - (_audioButton.right + CHAT_LEFT_SPACE), self.height - CHAT_TEXTVIEW_TOP * 2)];
+        _contentTextView.backgroundColor = [UIColor whiteColor];
         _contentTextView.delegate = self;
-        _contentTextView.placeholder = @"请输入聊天内容";
-        _contentTextView.inputView = nil;
+        _contentTextView.font = [UIFont systemFontOfSize:14];
+        _contentTextView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        _contentTextView.layer.borderWidth = 0.5;
+        _contentTextView.layer.cornerRadius = 5;
+        _contentTextView.layer.masksToBounds = YES;
         [self addSubview:_contentTextView];
         
-        _contetnButton = [QJKJButton buttonWithType:UIButtonTypeCustom];
-        _contetnButton.frame = _contentTextView.frame;
-        _contetnButton.backgroundColor = _contentTextView.backgroundColor;
-        [_contetnButton addTarget:self action:@selector(clickedTextView) forControlEvents:UIControlEventTouchUpInside];
-        _contetnButton.hidden = YES;
-        [self addSubview:_contetnButton];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHidden:) name:UIKeyboardWillHideNotification object:nil];
+  
+        _audioInputView = [[QJKJChatAudioInputView alloc] initWithFrame:_contentTextView.frame];
+        _audioInputView.backgroundColor = [UIColor whiteColor];
+        _audioInputView.hidden = YES;
+        [self addSubview:_audioInputView];
+        
+        _currentInputType = QJKJChatInputNone;
     }
     return self;
+}
+
+- (void)setFaceView:(QJKJChatFaceView *)faceView {
+    faceView.delegate = self;
+}
+
+#pragma mark - 键盘相关通知
+
+- (void)keyboardWillShow:(NSNotification *)noti {
+    
+    NSDictionary *info = noti.userInfo;
+    CGSize keyboardSize = [info[UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    
+    //语音、表情、更多恢复正常
+    _audioButton.selected = NO;
+    _emojiButton.selected = NO;
+    _moreButton.selected = NO;
+    
+    _audioInputView.hidden = YES;
+    
+    //隐藏上一个类型
+    [self hiddenHeightType:_currentInputType];
+    
+    //显示当前类型
+    _currentInputType = QJKJChatInputSystem;
+    [self showHeight:keyboardSize.height
+            withType:QJKJChatInputSystem];
+}
+
+- (void)keyboardWillHidden:(NSNotification *)noti {
+    [self hiddenHeightType:QJKJChatInputSystem];
+}
+
+
+#pragma mark - CustomMethond
+
+
+/**
+ 显示
+
+ @param height 高度
+ @param inputType 类型
+ */
+- (void)showHeight:(CGFloat)height
+          withType:(QJKJChatInputType)inputType {
+    if (_delegate && [_delegate respondsToSelector:@selector(showChatHeight:withType:)]) {
+        
+        [_delegate showChatHeight:height withType:inputType];
+
+    }
+}
+
+/**
+ 隐藏
+
+ @param inputType 类型
+ */
+- (void)hiddenHeightType:(QJKJChatInputType)inputType {
+    if (_delegate && [_delegate respondsToSelector:@selector(hiddenChatHeightType:)]) {
+        [_delegate hiddenChatHeightType:inputType];
+    }
+}
+
+/**
+ 隐藏键盘
+ */
+- (void)hiddenKeyboard{
+    //语音、表情、更多恢复正常
+    _audioButton.selected = NO;
+    _emojiButton.selected = NO;
+    _moreButton.selected = NO;
+
+    _audioInputView.hidden = YES;
+    
+    if (_currentInputType == QJKJChatInputSystem) {
+        [_contentTextView resignFirstResponder];
+    }
+    else {
+        
+        [self hiddenHeightType:_currentInputType];
+    }
+    
+    _currentInputType = QJKJChatInputNone;
+}
+
+#pragma mark - QJKJChatFaceViewDelegate
+
+//插入表情
+- (void)insertEmoji:(NSString *)emoji {
+    
+}
+
+//删除表情
+- (void)deleteEmoji {
+    
+}
+
+//发送数据
+- (void)sendContent {
+    
 }
 
 #pragma mark - UITextViewDelegate
@@ -98,70 +231,213 @@
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    DLog(@"变化");
+    DLog(@"变化 %@",textView.text);
+    
+    CGSize size = [QJKJChatInputView sizeForString:textView.text
+                               withNSLineBreakMode:NSLineBreakByCharWrapping
+                                          withFont:textView.font
+                                      withSizeMake:CGSizeMake(textView.width - 8 * 2, CGFLOAT_MAX)];
+    CGFloat height = size.height;
+    
+    if (height <= CHAT_INPUT_HEIGHT_MIN - CHAT_TEXTVIEW_TOP * 2) {
+        height = CHAT_INPUT_HEIGHT_MIN;
+    }
+    else if (height >= CHAT_INPUT_HEIGHT_MAX - CHAT_TEXTVIEW_TOP * 2) {
+        height = CHAT_INPUT_HEIGHT_MAX;
+    }
+    else {
+        height += CHAT_TEXTVIEW_TOP * 2;
+    }
+    
+    _contentTextView.height = height - CHAT_TEXTVIEW_TOP * 2;
+    _audioButton.top = height - _audioButton.height;
+    _emojiButton.top = height - _audioButton.height;
+    _moreButton.top = height - _audioButton.height;
+    
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(inputViewHeightChage:)]) {
+        [_delegate inputViewHeightChage:height];
+    }
+    
+    DLog(@"文本高度 %f",height);
 }
 
 #pragma mark - 按钮事件
 
+/**
+ 点击语音按钮
+
+ @param btn btn description
+ */
 - (void)clickedAudio:(UIButton *)btn {
     
     btn.selected = !btn.selected;
-    _emoijButton.selected = NO;
+    
+    //更多和表情恢复到正常状态
+    _emojiButton.selected = NO;
     _moreButton.selected = NO;
+
     
-    
+    if (btn.selected) {
+        _audioInputView.hidden = NO;
+        
+        if (_currentInputType == QJKJChatInputSystem) {
+            [_contentTextView resignFirstResponder];
+        }
+        else {
+
+            [self hiddenHeightType:_currentInputType];
+        }
+        
+        _currentInputType = QJKJChatInputNone;
+ 
+    }
+    else {
+        //键盘状态
+        _audioInputView.hidden = YES;
+        [_contentTextView becomeFirstResponder];
+    }
 }
 
+
+/**
+ 点击表情按钮
+
+ @param btn btn description
+ */
 - (void)clickedEmoij:(UIButton *)btn {
     
-    _contetnButton.hidden = NO;
-    
     btn.selected = !btn.selected;
+    
+    //语音和更多恢复到正常状态
     _audioButton.selected = NO;
     _moreButton.selected = NO;
     
-    [_contentTextView setInputView:self.faceView];
-    [_contentTextView reloadInputViews];
+    _audioInputView.hidden = YES;
+    
+    if (btn.selected) {
+        
+        if (_currentInputType == QJKJChatInputSystem) {
+            [_contentTextView resignFirstResponder];
+        }
+        else {
+            
+            [self hiddenHeightType:_currentInputType];
+        }
+        _currentInputType = QJKJChatInputEmoji;
+        
+        [self showHeight:CHAT_FACE_INPUT_HEIGHT
+                withType:QJKJChatInputEmoji];
+    }
+    else {
+        //键盘状态
+        
+        [_contentTextView becomeFirstResponder];
+        
+    }
 }
 
+
+/**
+ 点击更多按钮
+
+ @param btn btn description
+ */
 - (void)clickedMore:(UIButton *)btn {
     
-    _contetnButton.hidden = NO;
-    
     btn.selected = !btn.selected;
-    _audioButton.selected = NO;
-    _emoijButton.selected = NO;
     
-    [_contentTextView setInputView:self.moreView];
-    [_contentTextView reloadInputViews];
+    //语音和表情恢复到正常状态
+    _audioButton.selected = NO;
+    _emojiButton.selected = NO;
+    
+    _audioInputView.hidden = YES;
+    
+    if (btn.selected) {
+        if (_currentInputType == QJKJChatInputSystem) {
+            [_contentTextView resignFirstResponder];
+        }
+        else {
+            
+            [self hiddenHeightType:_currentInputType];
+        }
+        _currentInputType = QJKJChatInputMore;
+        
+        [self showHeight:CHAT_MORE_INPUT_HEIGHT
+                withType:QJKJChatInputMore];
+    }
+    else {
+        //键盘状态
+        
+        [_contentTextView becomeFirstResponder];
+        
+    }
 }
 
+
+/**
+ 点击输入框按钮
+ */
 - (void)clickedTextView {
     
+    //语音、表情、更多恢复正常
     _audioButton.selected = NO;
-    _emoijButton.selected = NO;
+    _emojiButton.selected = NO;
     _moreButton.selected = NO;
     
+    _contentButton.hidden = YES;
+    _audioInputView.hidden = YES;
+
+    //设置输入键盘
     [_contentTextView setInputView:nil];
-    [_contentTextView reloadInputViews];
     
-    _contetnButton.hidden = YES;
-}
-
-#pragma mark - getters or setters
-
-- (QJKJChatFaceView *)faceView {
-    if (!_faceView) {
-        _faceView = [[QJKJChatFaceView alloc] init];
+    if (!_contentTextView.isFirstResponder) {
+        [_contentTextView becomeFirstResponder];
     }
-    return _faceView;
+    else {
+        [_contentTextView reloadInputViews];
+    }
 }
 
-- (QJKJChatMoreView *)moreView {
-    if (!_moreView) {
-        _moreView = [[QJKJChatMoreView alloc] init];
-    }
-    return _moreView;
+/**
+ *  计算文本的size
+ *
+ *  @param string 所需计算文本
+ *  @param model  模式
+ *  @param font   字体大小
+ *  @param size   容量
+ *
+ *  @return 计算出的容量
+ */
++ (CGSize)sizeForString:(NSString *)string
+    withNSLineBreakMode:(NSLineBreakMode)model
+               withFont:(UIFont *)font
+           withSizeMake:(CGSize)size {
+    NSMutableParagraphStyle* paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    
+    paragraphStyle.lineBreakMode = model;
+    
+    NSDictionary* attributes =@{NSFontAttributeName:font,NSParagraphStyleAttributeName:paragraphStyle.copy};
+    
+    CGSize labelSize = [string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:attributes context:nil].size;
+    return labelSize;
 }
+
+//
+//#pragma mark - getters or setters
+//
+//- (QJKJChatFaceView *)faceView {
+//    if (!_faceView) {
+//        _faceView = [[QJKJChatFaceView alloc] init];
+//    }
+//    return _faceView;
+//}
+//
+//- (QJKJChatMoreView *)moreView {
+//    if (!_moreView) {
+//        _moreView = [[QJKJChatMoreView alloc] init];
+//    }
+//    return _moreView;
+//}
 
 @end

@@ -27,7 +27,7 @@
 {
     self = [super init];
     if (self) {
-        self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, MORE_BUTTON_WIDTH  + MORE_TOP_SPACE * 2);
+        self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, MORE_BUTTON_WIDTH   * 2 + MORE_TOP_SPACE * 2);
         
         _moreScrollView = [[QJKJScrollView alloc] initWithFrame:self.bounds];
         _moreScrollView.backgroundColor = [UIColor redColor];
