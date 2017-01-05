@@ -47,6 +47,13 @@
 		123640BA1E1D2D0400B7D371 /* QJKJNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B91E1D2D0400B7D371 /* QJKJNavigationVC.m */; };
 		123640BD1E1D334200B7D371 /* QJKJChatFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640BC1E1D334200B7D371 /* QJKJChatFaceView.m */; };
 		123640C01E1D3CE300B7D371 /* QJKJChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640BF1E1D3CE300B7D371 /* QJKJChatMoreView.m */; };
+		126486CB1E1E979300714805 /* chat_audio_tip_norm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126486CA1E1E979300714805 /* chat_audio_tip_norm@2x.png */; };
+		126486CD1E1E97C000714805 /* chat_audio_tip_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126486CC1E1E97C000714805 /* chat_audio_tip_cancel@2x.png */; };
+		126486CF1E1E97FD00714805 /* chat_audio_tip_short@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126486CE1E1E97FD00714805 /* chat_audio_tip_short@2x.png */; };
+		126486D11E1E980C00714805 /* chat_audio_tip_volum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 126486D01E1E980C00714805 /* chat_audio_tip_volum@2x.png */; };
+		126486D61E1E9F6800714805 /* QJKJPlayAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 126486D31E1E9F6800714805 /* QJKJPlayAudio.m */; };
+		126486D71E1E9F6800714805 /* QJKJRecordAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 126486D51E1E9F6800714805 /* QJKJRecordAudio.m */; };
+		126486DA1E1E9F8000714805 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126486D91E1E9F8000714805 /* AVFoundation.framework */; };
 		12CBC4A21E080B25007C7850 /* QJKJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4A11E080B25007C7850 /* QJKJTextView.m */; };
 		12CBC4A51E080C2C007C7850 /* QJKJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4A41E080C2C007C7850 /* QJKJLabel.m */; };
 		12CBC4AA1E080D96007C7850 /* UIFont+QJKJHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4A91E080D96007C7850 /* UIFont+QJKJHelper.m */; };
@@ -146,6 +153,15 @@
 		123640BC1E1D334200B7D371 /* QJKJChatFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatFaceView.m; sourceTree = "<group>"; };
 		123640BE1E1D3CE300B7D371 /* QJKJChatMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatMoreView.h; sourceTree = "<group>"; };
 		123640BF1E1D3CE300B7D371 /* QJKJChatMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatMoreView.m; sourceTree = "<group>"; };
+		126486CA1E1E979300714805 /* chat_audio_tip_norm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_audio_tip_norm@2x.png"; sourceTree = "<group>"; };
+		126486CC1E1E97C000714805 /* chat_audio_tip_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_audio_tip_cancel@2x.png"; sourceTree = "<group>"; };
+		126486CE1E1E97FD00714805 /* chat_audio_tip_short@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_audio_tip_short@2x.png"; sourceTree = "<group>"; };
+		126486D01E1E980C00714805 /* chat_audio_tip_volum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_audio_tip_volum@2x.png"; sourceTree = "<group>"; };
+		126486D21E1E9F6800714805 /* QJKJPlayAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJPlayAudio.h; sourceTree = "<group>"; };
+		126486D31E1E9F6800714805 /* QJKJPlayAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJPlayAudio.m; sourceTree = "<group>"; };
+		126486D41E1E9F6800714805 /* QJKJRecordAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJRecordAudio.h; sourceTree = "<group>"; };
+		126486D51E1E9F6800714805 /* QJKJRecordAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJRecordAudio.m; sourceTree = "<group>"; };
+		126486D91E1E9F8000714805 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		12CBC4A01E080B25007C7850 /* QJKJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJTextView.h; sourceTree = "<group>"; };
 		12CBC4A11E080B25007C7850 /* QJKJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJTextView.m; sourceTree = "<group>"; };
 		12CBC4A31E080C2C007C7850 /* QJKJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJLabel.h; sourceTree = "<group>"; };
@@ -189,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126486DA1E1E9F8000714805 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +243,7 @@
 				040DBE981E07CA6100D15EF9 /* LYCModuleManagerTests */,
 				040DBEA31E07CA6100D15EF9 /* LYCModuleManagerUITests */,
 				040DBE7A1E07CA6100D15EF9 /* Products */,
+				126486D81E1E9F8000714805 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -534,6 +552,10 @@
 		04EE53E51E1DD48800356BB4 /* ChatImage */ = {
 			isa = PBXGroup;
 			children = (
+				126486D01E1E980C00714805 /* chat_audio_tip_volum@2x.png */,
+				126486CE1E1E97FD00714805 /* chat_audio_tip_short@2x.png */,
+				126486CA1E1E979300714805 /* chat_audio_tip_norm@2x.png */,
+				126486CC1E1E97C000714805 /* chat_audio_tip_cancel@2x.png */,
 				04EE541C1E1E4A7B00356BB4 /* chat_delete@2x.png */,
 				04EE53E61E1DD48800356BB4 /* chat_audio@2x.png */,
 				04EE53E71E1DD48800356BB4 /* chat_emoji@2x.png */,
@@ -597,6 +619,10 @@
 		123640AC1E1D259600B7D371 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				126486D21E1E9F6800714805 /* QJKJPlayAudio.h */,
+				126486D31E1E9F6800714805 /* QJKJPlayAudio.m */,
+				126486D41E1E9F6800714805 /* QJKJRecordAudio.h */,
+				126486D51E1E9F6800714805 /* QJKJRecordAudio.m */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -621,6 +647,14 @@
 				04EE53EF1E1DDDA900356BB4 /* QJKJChatAudioInputView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		126486D81E1E9F8000714805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				126486D91E1E9F8000714805 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		12CBC4A61E080D00007C7850 /* FontCategory(字体) */ = {
@@ -827,12 +861,15 @@
 				04EE54091E1E446300356BB4 /* 吃惊@2x.png in Resources */,
 				04EE54181E1E446300356BB4 /* 阴险@2x.png in Resources */,
 				04EE540A1E1E446300356BB4 /* 呲牙@2x.png in Resources */,
+				126486D11E1E980C00714805 /* chat_audio_tip_volum@2x.png in Resources */,
+				126486CF1E1E97FD00714805 /* chat_audio_tip_short@2x.png in Resources */,
 				04EE53EB1E1DD48800356BB4 /* chat_emoji@2x.png in Resources */,
 				04EE540E1E1E446300356BB4 /* 害怕@2x.png in Resources */,
 				04EE540F1E1E446300356BB4 /* 害羞@2x.png in Resources */,
 				04EE54161E1E446300356BB4 /* 脸红@2x.png in Resources */,
 				04EE541A1E1E446300356BB4 /* 飞吻@2x.png in Resources */,
 				04EE541B1E1E446300356BB4 /* 鬼脸@2x.png in Resources */,
+				126486CB1E1E979300714805 /* chat_audio_tip_norm@2x.png in Resources */,
 				04EE540D1E1E446300356BB4 /* 失望@2x.png in Resources */,
 				04EE53ED1E1DD48800356BB4 /* chat_more@2x.png in Resources */,
 				04EE54071E1E446300356BB4 /* 亲亲@2x.png in Resources */,
@@ -841,6 +878,7 @@
 				04EE54121E1E446300356BB4 /* 想想@2x.png in Resources */,
 				04EE54191E1E446300356BB4 /* 难过@2x.png in Resources */,
 				04EE54171E1E446300356BB4 /* 苦脸@2x.png in Resources */,
+				126486CD1E1E97C000714805 /* chat_audio_tip_cancel@2x.png in Resources */,
 				04EE54151E1E446300356BB4 /* 纠结@2x.png in Resources */,
 				04EE53EA1E1DD48800356BB4 /* chat_audio@2x.png in Resources */,
 				04EE54101E1E446300356BB4 /* 开心@2x.png in Resources */,
@@ -868,6 +906,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126486D61E1E9F6800714805 /* QJKJPlayAudio.m in Sources */,
 				0409BABB1E0BC6EC00713310 /* LSDateSelectView.m in Sources */,
 				12CBC4DB1E0824BC007C7850 /* LSDropBoxView.m in Sources */,
 				123640B41E1D261300B7D371 /* QJKJChatModuleVC.m in Sources */,
@@ -888,6 +927,7 @@
 				12CBC4D11E082306007C7850 /* QJKJTableViewCell.m in Sources */,
 				12CBC4D71E08234E007C7850 /* QJKJView.m in Sources */,
 				123640C01E1D3CE300B7D371 /* QJKJChatMoreView.m in Sources */,
+				126486D71E1E9F6800714805 /* QJKJRecordAudio.m in Sources */,
 				040DBE7E1E07CA6100D15EF9 /* main.m in Sources */,
 				12CBC4C51E0822C2007C7850 /* QJKJButton.m in Sources */,
 				12CBC4BF1E0822A4007C7850 /* QJKJImageView.m in Sources */,

@@ -62,7 +62,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.chatInputView hiddenKeyboard];
+//    [self.chatInputView hiddenKeyboard];
 }
 
 #pragma mark - QJKJChatInputViewDelegate
@@ -121,15 +121,7 @@
 }
 
 - (void)inputViewHeightChage:(CGFloat)height {
-//    if (height < CHAT_INPUT_HEIGHT_MIN - 10 * 2) {
-//        self.inputViewHeight = CHAT_INPUT_HEIGHT_MIN;
-//    }
-//    else if (height > CHAT_INPUT_HEIGHT_MAX - 10 * 2) {
-//        self.inputViewHeight = CHAT_INPUT_HEIGHT_MAX;
-//    }
-//    else {
-//        self.inputViewHeight = height + 10 * 2;
-//    }
+
     self.inputViewHeight = height;
     
     

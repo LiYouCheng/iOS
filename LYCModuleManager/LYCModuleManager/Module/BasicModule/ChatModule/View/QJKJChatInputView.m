@@ -66,6 +66,8 @@ QJKJChatFaceViewDelegate>
     
     QJKJChatInputType _currentInputType;//当前输入类型
     
+    NSArray *_emojiArray;//表情源
+    
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -74,6 +76,7 @@ QJKJChatFaceViewDelegate>
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
         
+
         _audioButton = [QJKJButton buttonWithType:UIButtonTypeCustom];
         _audioButton.frame = CGRectMake(CHAT_LEFT_SPACE, (self.height - CHAT_BUTTON_WIDTH) / 2.0, CHAT_BUTTON_WIDTH, CHAT_BUTTON_WIDTH);
         [_audioButton setImage:[UIImage imageNamed:CHAT_AUDIO_IMAGE] forState:UIControlStateNormal];
@@ -114,6 +117,8 @@ QJKJChatFaceViewDelegate>
         [self addSubview:_audioInputView];
         
         _currentInputType = QJKJChatInputNone;
+        
+        [self emjjiArray];
     }
     return self;
 }
@@ -152,6 +157,10 @@ QJKJChatFaceViewDelegate>
 
 #pragma mark - CustomMethond
 
+- (void)emjjiArray {
+    NSArray *array = @[ @"开心",@"害羞",@"飞吻",@"亲亲",@"吃惊",@"呲牙",@"大哭",@"鬼脸",@"害怕",@"阴险",@"惊恐",@"纠结",@"苦脸",@"冷汗",@"脸红",@"难过",@"失望",@"喜欢",@"想想",@"糟糕",@"眨眼" ];
+    _emojiArray = array;
+}
 
 /**
  显示
@@ -205,12 +214,57 @@ QJKJChatFaceViewDelegate>
 
 //插入表情
 - (void)insertEmoji:(NSString *)emoji {
+    NSString *str = _contentTextView.text;
+    str = [str stringByAppendingString:emoji];
+    _contentTextView.text = str;
     
+    [self textViewDidChange:_contentTextView];
+    
+    [_contentTextView scrollRangeToVisible:NSMakeRange(_contentTextView.text.length, 1)];
+    _contentTextView.layoutManager.allowsNonContiguousLayout = NO;
 }
 
 //删除表情
 - (void)deleteEmoji {
+    NSString *str = _contentTextView.text;
     
+    if (str.length >= 4) {
+        NSString *emojiStr = [str substringFromIndex:[str length] - 1 - 3];
+        if ([emojiStr hasPrefix:@"["] && [emojiStr hasSuffix:@"]"]) {
+            NSString *tempStr = [emojiStr substringWithRange:NSMakeRange(1, 2)];
+            BOOL isEmoij = NO;
+            for (NSString *tStr in _emojiArray) {
+                if ([tempStr isEqualToString:tStr]) {
+                    //找到相等的，说明是表情
+                    isEmoij = YES;
+                    break;
+                }
+            }
+            
+            if (isEmoij) {
+                str = [str substringToIndex:str.length - 1 - 3];
+            }
+            else {
+                if ([str length] >= 1) {
+                    str = [str substringToIndex:str.length - 1];
+                }
+            }
+        }
+        else {
+            if ([str length] >= 1) {
+                str = [str substringToIndex:str.length - 1];
+            }
+        }
+    }
+    else {
+        if ([str length] >= 1) {
+            str = [str substringToIndex:str.length - 1];
+        }
+    }
+
+    _contentTextView.text = str;
+    
+    [self textViewDidChange:_contentTextView];
 }
 
 //发送数据
@@ -231,7 +285,7 @@ QJKJChatFaceViewDelegate>
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    DLog(@"变化 %@",textView.text);
+//    DLog(@"变化 %@",textView.text);
     
     CGSize size = [QJKJChatInputView sizeForString:textView.text
                                withNSLineBreakMode:NSLineBreakByCharWrapping
@@ -260,6 +314,19 @@ QJKJChatFaceViewDelegate>
     }
     
     DLog(@"文本高度 %f",height);
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    DLog(@"text = %@",text);
+    if ([text isEqualToString:@""]) {
+        //点击删除
+        
+        [self deleteEmoji];
+        return NO;
+        
+    }
+    
+    return YES;
 }
 
 #pragma mark - 按钮事件
