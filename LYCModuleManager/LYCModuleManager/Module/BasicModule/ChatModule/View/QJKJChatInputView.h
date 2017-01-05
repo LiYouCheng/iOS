@@ -34,6 +34,10 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, weak) id<QJKJChatInputViewDelegate> delegate;
 
+
+/**
+ 表情键盘
+ */
 @property (nonatomic, strong) QJKJChatFaceView *faceView;
 
 /**
