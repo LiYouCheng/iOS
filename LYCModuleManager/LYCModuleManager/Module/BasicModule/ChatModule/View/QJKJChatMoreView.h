@@ -10,6 +10,19 @@
 
 #import "QJKJView.h"
 
+@protocol QJKJChatMoreViewDelegate <NSObject>
+
+/**
+ 选择图片完成
+
+ @param image 图片
+ */
+- (void)selectImageFinish:(UIImage *)image;
+
+@end
+
 @interface QJKJChatMoreView : QJKJView
+
+@property (nonatomic, weak) id<QJKJChatMoreViewDelegate> delegate;
 
 @end

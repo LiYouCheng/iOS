@@ -11,6 +11,7 @@
 #import "QJKJView.h"
 
 @class QJKJChatFaceView;
+@class QJKJChatMoreView;
 
 typedef enum : NSUInteger {
     QJKJChatInputSystem = 1,//系统
@@ -18,6 +19,12 @@ typedef enum : NSUInteger {
     QJKJChatInputMore,//更多
     QJKJChatInputNone,//无
 } QJKJChatInputType;
+
+
+typedef void(^QJKJChatInputViewSendAudioBlock)(NSString *audioString);
+typedef void(^QJKJChatInputViewSendTextBlock)(NSString *text);
+typedef void(^QJKJChatInputViewSendImageBlock)(UIImage *image);
+
 
 @protocol QJKJChatInputViewDelegate <NSObject>
 
@@ -36,9 +43,28 @@ typedef enum : NSUInteger {
 
 
 /**
+ 发送文本块
+ */
+@property (nonatomic, copy) QJKJChatInputViewSendTextBlock sendTextBlock;
+
+/**
+ 发送语音块
+ */
+@property (nonatomic, copy) QJKJChatInputViewSendAudioBlock sendAuidoBlock;
+
+/**
+ 发送图片块
+ */
+@property (nonatomic, copy) QJKJChatInputViewSendImageBlock sendImageBlock;
+
+/**
  表情键盘
  */
 @property (nonatomic, strong) QJKJChatFaceView *faceView;
+/**
+ 更多键盘
+ */
+@property (nonatomic, strong) QJKJChatMoreView *moreView;
 
 /**
  隐藏键盘

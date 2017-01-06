@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class QJKJImageView;
+typedef void(^QJKJImageViewClickBlock)(QJKJImageView *imageView);
+
 @interface QJKJImageView : UIImageView
+
+@property (nonatomic, copy) QJKJImageViewClickBlock clickBlock;
+@property (nonatomic, assign) BOOL isClick;//是否能够点击
+
 
 @end

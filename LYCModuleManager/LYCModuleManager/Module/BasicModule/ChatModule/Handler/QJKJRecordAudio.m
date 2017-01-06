@@ -11,6 +11,8 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+#import "amrFileCodec.h"
+
 //录音最长时间
 #define TimeLimit 60
 
@@ -132,8 +134,14 @@
         }
         
         NSData *audioData = [NSData dataWithContentsOfURL:self.audioFileURL];
+        
+        //经过EncodeWAVToAMR转换
+        audioData = EncodeWAVEToAMR(audioData, 1, 16);
+        //然后在转换成string经base64处理
+        NSString *audioString = [audioData base64EncodedStringWithOptions:0];
+        
         //音频数据和音频时间
-        NSDictionary *dic = @{ @"data":audioData
+        NSDictionary *dic = @{ @"audioString":audioString
                                ,@"duration":[NSString stringWithFormat:@"%.0f",ceil(audioDurationSeconds)] };
         return dic;
     }

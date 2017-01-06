@@ -49,7 +49,9 @@
 
 @interface QJKJChatInputView ()
 <UITextViewDelegate,
-QJKJChatFaceViewDelegate>
+QJKJChatFaceViewDelegate,
+QJKJChatMoreViewDelegate,
+QJKJChatAudioInputViewDelegate>
 
 
 @end
@@ -114,6 +116,7 @@ QJKJChatFaceViewDelegate>
         _audioInputView = [[QJKJChatAudioInputView alloc] initWithFrame:_contentTextView.frame];
         _audioInputView.backgroundColor = [UIColor whiteColor];
         _audioInputView.hidden = YES;
+        _audioInputView.delegate = self;
         [self addSubview:_audioInputView];
         
         _currentInputType = QJKJChatInputNone;
@@ -125,6 +128,10 @@ QJKJChatFaceViewDelegate>
 
 - (void)setFaceView:(QJKJChatFaceView *)faceView {
     faceView.delegate = self;
+}
+
+- (void)setMoreView:(QJKJChatMoreView *)moreView {
+    moreView.delegate = self;
 }
 
 #pragma mark - 键盘相关通知
@@ -269,8 +276,33 @@ QJKJChatFaceViewDelegate>
 
 //发送数据
 - (void)sendContent {
+    DLog(@"发送文字和表情");
+    if (_sendTextBlock) {
+        _sendTextBlock(_contentTextView.text);
+    }
+}
+
+#pragma mark - QJKJChatMoreViewDelegate
+
+//选择图片
+- (void)selectImageFinish:(UIImage *)image {
+    DLog(@"发送图片");
+    if (_sendImageBlock) {
+        _sendImageBlock(image);
+    }
+}
+
+#pragma mark - QJKJChatAudioInputViewDelegate
+
+//选择录音
+- (void)selectAudioFinish:(NSString *)aduioString {
+    DLog(@"发送录音");
+    if (_sendAuidoBlock) {
+        _sendAuidoBlock(aduioString);
+    }
     
 }
+
 
 #pragma mark - UITextViewDelegate
 

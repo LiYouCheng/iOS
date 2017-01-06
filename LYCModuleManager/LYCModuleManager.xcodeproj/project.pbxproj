@@ -42,6 +42,27 @@
 		04EE541A1E1E446300356BB4 /* 飞吻@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE54051E1E446300356BB4 /* 飞吻@2x.png */; };
 		04EE541B1E1E446300356BB4 /* 鬼脸@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE54061E1E446300356BB4 /* 鬼脸@2x.png */; };
 		04EE541D1E1E4A7B00356BB4 /* chat_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE541C1E1E4A7B00356BB4 /* chat_delete@2x.png */; };
+		04EE542E1E1F387400356BB4 /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54201E1F387300356BB4 /* amrFileCodec.m */; };
+		04EE542F1E1F387400356BB4 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EE54291E1F387300356BB4 /* libopencore-amrnb.a */; };
+		04EE54301E1F387400356BB4 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EE542A1E1F387300356BB4 /* libopencore-amrwb.a */; };
+		04EE54311E1F387400356BB4 /* opencore-amrnb.pc in Resources */ = {isa = PBXBuildFile; fileRef = 04EE542C1E1F387400356BB4 /* opencore-amrnb.pc */; };
+		04EE54321E1F387400356BB4 /* opencore-amrwb.pc in Resources */ = {isa = PBXBuildFile; fileRef = 04EE542D1E1F387400356BB4 /* opencore-amrwb.pc */; };
+		04EE54351E1F41CF00356BB4 /* QJKJChatInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54341E1F41CF00356BB4 /* QJKJChatInfoModel.m */; };
+		04EE54391E1F482000356BB4 /* QJKJNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54381E1F482000356BB4 /* QJKJNetworkingRequest.m */; };
+		04EE543D1E1F4F7400356BB4 /* QJKJDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE543C1E1F4F7400356BB4 /* QJKJDataBaseManager.m */; };
+		04EE54401E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE543F1E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.m */; };
+		04EE54441E1F752000356BB4 /* QJKJDateShareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54431E1F752000356BB4 /* QJKJDateShareHelper.m */; };
+		04EE54471E1F779C00356BB4 /* QJKJChatTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54461E1F779C00356BB4 /* QJKJChatTimeCell.m */; };
+		04EE544A1E1F77FD00356BB4 /* QJKJChatAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54491E1F77FD00356BB4 /* QJKJChatAudioCell.m */; };
+		04EE544D1E1F780B00356BB4 /* QJKJChatImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE544C1E1F780B00356BB4 /* QJKJChatImageCell.m */; };
+		04EE54501E1F781D00356BB4 /* QJKJChatTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE544F1E1F781D00356BB4 /* QJKJChatTextCell.m */; };
+		04EE54551E1F7EE200356BB4 /* Chat04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE54511E1F7EE200356BB4 /* Chat04@2x.png */; };
+		04EE54561E1F7EE200356BB4 /* Chat05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE54521E1F7EE200356BB4 /* Chat05@2x.png */; };
+		04EE54571E1F7EE200356BB4 /* chat_left_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE54531E1F7EE200356BB4 /* chat_left_bubble@2x.png */; };
+		04EE54581E1F7EE200356BB4 /* chat_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EE54541E1F7EE200356BB4 /* chat_right_bubble@2x.png */; };
+		04EE545C1E1F893C00356BB4 /* QJKJImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE545B1E1F893C00356BB4 /* QJKJImageScrollView.m */; };
+		04EE545F1E1F89BE00356BB4 /* QJKJImageLookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE545E1E1F89BE00356BB4 /* QJKJImageLookView.m */; };
+		04EE54621E1F8EFD00356BB4 /* QJKJImageLookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE54611E1F8EFD00356BB4 /* QJKJImageLookCell.m */; };
 		123640B41E1D261300B7D371 /* QJKJChatModuleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B31E1D261300B7D371 /* QJKJChatModuleVC.m */; };
 		123640B71E1D266A00B7D371 /* QJKJChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B61E1D266A00B7D371 /* QJKJChatInputView.m */; };
 		123640BA1E1D2D0400B7D371 /* QJKJNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 123640B91E1D2D0400B7D371 /* QJKJNavigationVC.m */; };
@@ -72,6 +93,9 @@
 		12CBC4D71E08234E007C7850 /* QJKJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4D61E08234E007C7850 /* QJKJView.m */; };
 		12CBC4DB1E0824BC007C7850 /* LSDropBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4DA1E0824BC007C7850 /* LSDropBoxView.m */; };
 		12CBC4DE1E0830A0007C7850 /* LSDropBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBC4DD1E0830A0007C7850 /* LSDropBoxCell.m */; };
+		254B1DEBCBC2DC321A5FDE68 /* libPods-LYCModuleManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C77BB34D03DEFE01B1EC3E /* libPods-LYCModuleManager.a */; };
+		52D775FFBBACD8C96A8CA2DD /* libPods-LYCModuleManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01474A073238C6066FBA183C /* libPods-LYCModuleManagerUITests.a */; };
+		EED2C4E7ED6B229C854DC8CA /* libPods-LYCModuleManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D517F2FB647E59F8FF99B3 /* libPods-LYCModuleManagerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +116,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01474A073238C6066FBA183C /* libPods-LYCModuleManagerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYCModuleManagerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0409BAB91E0BC6EC00713310 /* LSDateSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDateSelectView.h; sourceTree = "<group>"; };
 		0409BABA1E0BC6EC00713310 /* LSDateSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDateSelectView.m; sourceTree = "<group>"; };
 		040DBE791E07CA6100D15EF9 /* LYCModuleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCModuleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +168,44 @@
 		04EE54051E1E446300356BB4 /* 飞吻@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飞吻@2x.png"; sourceTree = "<group>"; };
 		04EE54061E1E446300356BB4 /* 鬼脸@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鬼脸@2x.png"; sourceTree = "<group>"; };
 		04EE541C1E1E4A7B00356BB4 /* chat_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_delete@2x.png"; sourceTree = "<group>"; };
+		04EE541F1E1F387300356BB4 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		04EE54201E1F387300356BB4 /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
+		04EE54231E1F387300356BB4 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		04EE54241E1F387300356BB4 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		04EE54261E1F387300356BB4 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		04EE54271E1F387300356BB4 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		04EE54291E1F387300356BB4 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		04EE542A1E1F387300356BB4 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		04EE542C1E1F387400356BB4 /* opencore-amrnb.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "opencore-amrnb.pc"; sourceTree = "<group>"; };
+		04EE542D1E1F387400356BB4 /* opencore-amrwb.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "opencore-amrwb.pc"; sourceTree = "<group>"; };
+		04EE54331E1F41CF00356BB4 /* QJKJChatInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatInfoModel.h; sourceTree = "<group>"; };
+		04EE54341E1F41CF00356BB4 /* QJKJChatInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatInfoModel.m; sourceTree = "<group>"; };
+		04EE54371E1F482000356BB4 /* QJKJNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJNetworkingRequest.h; sourceTree = "<group>"; };
+		04EE54381E1F482000356BB4 /* QJKJNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJNetworkingRequest.m; sourceTree = "<group>"; };
+		04EE543B1E1F4F7400356BB4 /* QJKJDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJDataBaseManager.h; sourceTree = "<group>"; };
+		04EE543C1E1F4F7400356BB4 /* QJKJDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJDataBaseManager.m; sourceTree = "<group>"; };
+		04EE543E1E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QJKJDataBaseManager+QJKJChatRecord.h"; sourceTree = "<group>"; };
+		04EE543F1E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QJKJDataBaseManager+QJKJChatRecord.m"; sourceTree = "<group>"; };
+		04EE54421E1F752000356BB4 /* QJKJDateShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJDateShareHelper.h; sourceTree = "<group>"; };
+		04EE54431E1F752000356BB4 /* QJKJDateShareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJDateShareHelper.m; sourceTree = "<group>"; };
+		04EE54451E1F779C00356BB4 /* QJKJChatTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatTimeCell.h; sourceTree = "<group>"; };
+		04EE54461E1F779C00356BB4 /* QJKJChatTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatTimeCell.m; sourceTree = "<group>"; };
+		04EE54481E1F77FD00356BB4 /* QJKJChatAudioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatAudioCell.h; sourceTree = "<group>"; };
+		04EE54491E1F77FD00356BB4 /* QJKJChatAudioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatAudioCell.m; sourceTree = "<group>"; };
+		04EE544B1E1F780B00356BB4 /* QJKJChatImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatImageCell.h; sourceTree = "<group>"; };
+		04EE544C1E1F780B00356BB4 /* QJKJChatImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatImageCell.m; sourceTree = "<group>"; };
+		04EE544E1E1F781D00356BB4 /* QJKJChatTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatTextCell.h; sourceTree = "<group>"; };
+		04EE544F1E1F781D00356BB4 /* QJKJChatTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatTextCell.m; sourceTree = "<group>"; };
+		04EE54511E1F7EE200356BB4 /* Chat04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat04@2x.png"; sourceTree = "<group>"; };
+		04EE54521E1F7EE200356BB4 /* Chat05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chat05@2x.png"; sourceTree = "<group>"; };
+		04EE54531E1F7EE200356BB4 /* chat_left_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_left_bubble@2x.png"; sourceTree = "<group>"; };
+		04EE54541E1F7EE200356BB4 /* chat_right_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_right_bubble@2x.png"; sourceTree = "<group>"; };
+		04EE545A1E1F893C00356BB4 /* QJKJImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJImageScrollView.h; sourceTree = "<group>"; };
+		04EE545B1E1F893C00356BB4 /* QJKJImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJImageScrollView.m; sourceTree = "<group>"; };
+		04EE545D1E1F89BE00356BB4 /* QJKJImageLookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJImageLookView.h; sourceTree = "<group>"; };
+		04EE545E1E1F89BE00356BB4 /* QJKJImageLookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJImageLookView.m; sourceTree = "<group>"; };
+		04EE54601E1F8EFD00356BB4 /* QJKJImageLookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJImageLookCell.h; sourceTree = "<group>"; };
+		04EE54611E1F8EFD00356BB4 /* QJKJImageLookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJImageLookCell.m; sourceTree = "<group>"; };
 		123640B21E1D261300B7D371 /* QJKJChatModuleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatModuleVC.h; sourceTree = "<group>"; };
 		123640B31E1D261300B7D371 /* QJKJChatModuleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJKJChatModuleVC.m; sourceTree = "<group>"; };
 		123640B51E1D266A00B7D371 /* QJKJChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJKJChatInputView.h; sourceTree = "<group>"; };
@@ -198,6 +261,14 @@
 		12CBC4DA1E0824BC007C7850 /* LSDropBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDropBoxView.m; sourceTree = "<group>"; };
 		12CBC4DC1E0830A0007C7850 /* LSDropBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDropBoxCell.h; sourceTree = "<group>"; };
 		12CBC4DD1E0830A0007C7850 /* LSDropBoxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDropBoxCell.m; sourceTree = "<group>"; };
+		2A6C6C787EC336D9F7309D8B /* Pods-LYCModuleManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCModuleManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCModuleManagerTests/Pods-LYCModuleManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61F14E8C9C76CD7ACE044D2A /* Pods-LYCModuleManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCModuleManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCModuleManagerUITests/Pods-LYCModuleManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DBDAB189AF40FA43FC0C580 /* Pods-LYCModuleManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCModuleManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCModuleManager/Pods-LYCModuleManager.debug.xcconfig"; sourceTree = "<group>"; };
+		72DDDBF8A808EC3944322C70 /* Pods-LYCModuleManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCModuleManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCModuleManager/Pods-LYCModuleManager.release.xcconfig"; sourceTree = "<group>"; };
+		99A02036D97DA244313EA213 /* Pods-LYCModuleManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCModuleManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCModuleManagerTests/Pods-LYCModuleManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0C77BB34D03DEFE01B1EC3E /* libPods-LYCModuleManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYCModuleManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9029FAF6711363D46A0BB07 /* Pods-LYCModuleManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCModuleManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCModuleManagerUITests/Pods-LYCModuleManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4D517F2FB647E59F8FF99B3 /* libPods-LYCModuleManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYCModuleManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				126486DA1E1E9F8000714805 /* AVFoundation.framework in Frameworks */,
+				04EE54301E1F387400356BB4 /* libopencore-amrwb.a in Frameworks */,
+				04EE542F1E1F387400356BB4 /* libopencore-amrnb.a in Frameworks */,
+				254B1DEBCBC2DC321A5FDE68 /* libPods-LYCModuleManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +287,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED2C4E7ED6B229C854DC8CA /* libPods-LYCModuleManagerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D775FFBBACD8C96A8CA2DD /* libPods-LYCModuleManagerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +320,7 @@
 				040DBEA31E07CA6100D15EF9 /* LYCModuleManagerUITests */,
 				040DBE7A1E07CA6100D15EF9 /* Products */,
 				126486D81E1E9F8000714805 /* Frameworks */,
+				F813B702ED02E6ADC21E8082 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,6 +415,9 @@
 		046AA5971E07D1E60097EC30 /* BasicModule(基本模块) */ = {
 			isa = PBXGroup;
 			children = (
+				04EE54591E1F88FD00356BB4 /* ImageLook(查看图片) */,
+				04EE54411E1F752000356BB4 /* DateHelper(时间转换) */,
+				04EE54361E1F482000356BB4 /* NetworkingRequest */,
 				123640AA1E1D259600B7D371 /* ChatModule(聊天) */,
 				0409BAB81E0BC6BB00713310 /* DateSelect(选择时间) */,
 				12CBC4D81E082474007C7850 /* DropBox(下拉框) */,
@@ -552,6 +632,10 @@
 		04EE53E51E1DD48800356BB4 /* ChatImage */ = {
 			isa = PBXGroup;
 			children = (
+				04EE54511E1F7EE200356BB4 /* Chat04@2x.png */,
+				04EE54521E1F7EE200356BB4 /* Chat05@2x.png */,
+				04EE54531E1F7EE200356BB4 /* chat_left_bubble@2x.png */,
+				04EE54541E1F7EE200356BB4 /* chat_right_bubble@2x.png */,
 				126486D01E1E980C00714805 /* chat_audio_tip_volum@2x.png */,
 				126486CE1E1E97FD00714805 /* chat_audio_tip_short@2x.png */,
 				126486CA1E1E979300714805 /* chat_audio_tip_norm@2x.png */,
@@ -593,9 +677,112 @@
 			path = EmojiImage;
 			sourceTree = "<group>";
 		};
+		04EE541E1E1F387300356BB4 /* amr */ = {
+			isa = PBXGroup;
+			children = (
+				04EE541F1E1F387300356BB4 /* amrFileCodec.h */,
+				04EE54201E1F387300356BB4 /* amrFileCodec.m */,
+				04EE54211E1F387300356BB4 /* include */,
+				04EE54281E1F387300356BB4 /* lib */,
+			);
+			path = amr;
+			sourceTree = "<group>";
+		};
+		04EE54211E1F387300356BB4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				04EE54221E1F387300356BB4 /* opencore-amrnb */,
+				04EE54251E1F387300356BB4 /* opencore-amrwb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		04EE54221E1F387300356BB4 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				04EE54231E1F387300356BB4 /* interf_dec.h */,
+				04EE54241E1F387300356BB4 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		04EE54251E1F387300356BB4 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				04EE54261E1F387300356BB4 /* dec_if.h */,
+				04EE54271E1F387300356BB4 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		04EE54281E1F387300356BB4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				04EE54291E1F387300356BB4 /* libopencore-amrnb.a */,
+				04EE542A1E1F387300356BB4 /* libopencore-amrwb.a */,
+				04EE542B1E1F387300356BB4 /* pkgconfig */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		04EE542B1E1F387300356BB4 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				04EE542C1E1F387400356BB4 /* opencore-amrnb.pc */,
+				04EE542D1E1F387400356BB4 /* opencore-amrwb.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		04EE54361E1F482000356BB4 /* NetworkingRequest */ = {
+			isa = PBXGroup;
+			children = (
+				04EE54371E1F482000356BB4 /* QJKJNetworkingRequest.h */,
+				04EE54381E1F482000356BB4 /* QJKJNetworkingRequest.m */,
+			);
+			path = NetworkingRequest;
+			sourceTree = "<group>";
+		};
+		04EE543A1E1F4F5A00356BB4 /* ChatDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				04EE543B1E1F4F7400356BB4 /* QJKJDataBaseManager.h */,
+				04EE543C1E1F4F7400356BB4 /* QJKJDataBaseManager.m */,
+				04EE543E1E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.h */,
+				04EE543F1E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.m */,
+			);
+			path = ChatDataBase;
+			sourceTree = "<group>";
+		};
+		04EE54411E1F752000356BB4 /* DateHelper(时间转换) */ = {
+			isa = PBXGroup;
+			children = (
+				04EE54421E1F752000356BB4 /* QJKJDateShareHelper.h */,
+				04EE54431E1F752000356BB4 /* QJKJDateShareHelper.m */,
+			);
+			name = "DateHelper(时间转换)";
+			path = DateHelper;
+			sourceTree = "<group>";
+		};
+		04EE54591E1F88FD00356BB4 /* ImageLook(查看图片) */ = {
+			isa = PBXGroup;
+			children = (
+				04EE545A1E1F893C00356BB4 /* QJKJImageScrollView.h */,
+				04EE545B1E1F893C00356BB4 /* QJKJImageScrollView.m */,
+				04EE545D1E1F89BE00356BB4 /* QJKJImageLookView.h */,
+				04EE545E1E1F89BE00356BB4 /* QJKJImageLookView.m */,
+				04EE54601E1F8EFD00356BB4 /* QJKJImageLookCell.h */,
+				04EE54611E1F8EFD00356BB4 /* QJKJImageLookCell.m */,
+			);
+			name = "ImageLook(查看图片)";
+			path = ImageLook;
+			sourceTree = "<group>";
+		};
 		123640AA1E1D259600B7D371 /* ChatModule(聊天) */ = {
 			isa = PBXGroup;
 			children = (
+				04EE543A1E1F4F5A00356BB4 /* ChatDataBase */,
+				04EE541E1E1F387300356BB4 /* amr */,
 				04EE53F11E1E446300356BB4 /* EmojiImage */,
 				04EE53E51E1DD48800356BB4 /* ChatImage */,
 				123640AB1E1D259600B7D371 /* Controller */,
@@ -630,6 +817,8 @@
 		123640AD1E1D259600B7D371 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04EE54331E1F41CF00356BB4 /* QJKJChatInfoModel.h */,
+				04EE54341E1F41CF00356BB4 /* QJKJChatInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -645,6 +834,14 @@
 				123640BF1E1D3CE300B7D371 /* QJKJChatMoreView.m */,
 				04EE53EE1E1DDDA900356BB4 /* QJKJChatAudioInputView.h */,
 				04EE53EF1E1DDDA900356BB4 /* QJKJChatAudioInputView.m */,
+				04EE54451E1F779C00356BB4 /* QJKJChatTimeCell.h */,
+				04EE54461E1F779C00356BB4 /* QJKJChatTimeCell.m */,
+				04EE54481E1F77FD00356BB4 /* QJKJChatAudioCell.h */,
+				04EE54491E1F77FD00356BB4 /* QJKJChatAudioCell.m */,
+				04EE544B1E1F780B00356BB4 /* QJKJChatImageCell.h */,
+				04EE544C1E1F780B00356BB4 /* QJKJChatImageCell.m */,
+				04EE544E1E1F781D00356BB4 /* QJKJChatTextCell.h */,
+				04EE544F1E1F781D00356BB4 /* QJKJChatTextCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -653,6 +850,9 @@
 			isa = PBXGroup;
 			children = (
 				126486D91E1E9F8000714805 /* AVFoundation.framework */,
+				B0C77BB34D03DEFE01B1EC3E /* libPods-LYCModuleManager.a */,
+				F4D517F2FB647E59F8FF99B3 /* libPods-LYCModuleManagerTests.a */,
+				01474A073238C6066FBA183C /* libPods-LYCModuleManagerUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -741,6 +941,19 @@
 			path = DropBox;
 			sourceTree = "<group>";
 		};
+		F813B702ED02E6ADC21E8082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DBDAB189AF40FA43FC0C580 /* Pods-LYCModuleManager.debug.xcconfig */,
+				72DDDBF8A808EC3944322C70 /* Pods-LYCModuleManager.release.xcconfig */,
+				2A6C6C787EC336D9F7309D8B /* Pods-LYCModuleManagerTests.debug.xcconfig */,
+				99A02036D97DA244313EA213 /* Pods-LYCModuleManagerTests.release.xcconfig */,
+				61F14E8C9C76CD7ACE044D2A /* Pods-LYCModuleManagerUITests.debug.xcconfig */,
+				E9029FAF6711363D46A0BB07 /* Pods-LYCModuleManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -748,9 +961,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 040DBEA91E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManager" */;
 			buildPhases = (
+				67C0C0DC6206ACE0B4260FBC /* [CP] Check Pods Manifest.lock */,
 				040DBE751E07CA6100D15EF9 /* Sources */,
 				040DBE761E07CA6100D15EF9 /* Frameworks */,
 				040DBE771E07CA6100D15EF9 /* Resources */,
+				58EF8341EFFF74AE5DBBA71D /* [CP] Embed Pods Frameworks */,
+				6AC61365A79BFBA4A9129952 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -765,9 +981,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 040DBEAC1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerTests" */;
 			buildPhases = (
+				73151520E09C07ECACA52F64 /* [CP] Check Pods Manifest.lock */,
 				040DBE911E07CA6100D15EF9 /* Sources */,
 				040DBE921E07CA6100D15EF9 /* Frameworks */,
 				040DBE931E07CA6100D15EF9 /* Resources */,
+				C62388B0E218AADEBF3E050B /* [CP] Embed Pods Frameworks */,
+				373BBA4B90353D6039674C65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -783,9 +1002,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 040DBEAF1E07CA6100D15EF9 /* Build configuration list for PBXNativeTarget "LYCModuleManagerUITests" */;
 			buildPhases = (
+				C7597EA427D9F129863D1E58 /* [CP] Check Pods Manifest.lock */,
 				040DBE9C1E07CA6100D15EF9 /* Sources */,
 				040DBE9D1E07CA6100D15EF9 /* Frameworks */,
 				040DBE9E1E07CA6100D15EF9 /* Resources */,
+				CFCE1F8139F2BA08688E482E /* [CP] Embed Pods Frameworks */,
+				3F862D45EBC8F7F31A32B71A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -853,20 +1075,25 @@
 			files = (
 				04EE54111E1E446300356BB4 /* 惊恐@2x.png in Resources */,
 				04EE54081E1E446300356BB4 /* 冷汗@2x.png in Resources */,
+				04EE54571E1F7EE200356BB4 /* chat_left_bubble@2x.png in Resources */,
 				04EE54131E1E446300356BB4 /* 眨眼@2x.png in Resources */,
 				040DBE8C1E07CA6100D15EF9 /* Assets.xcassets in Resources */,
 				04EE54141E1E446300356BB4 /* 糟糕@2x.png in Resources */,
+				04EE54561E1F7EE200356BB4 /* Chat05@2x.png in Resources */,
 				04EE53EC1E1DD48800356BB4 /* chat_keyboard@2x.png in Resources */,
 				04EE541D1E1E4A7B00356BB4 /* chat_delete@2x.png in Resources */,
 				04EE54091E1E446300356BB4 /* 吃惊@2x.png in Resources */,
 				04EE54181E1E446300356BB4 /* 阴险@2x.png in Resources */,
 				04EE540A1E1E446300356BB4 /* 呲牙@2x.png in Resources */,
+				04EE54551E1F7EE200356BB4 /* Chat04@2x.png in Resources */,
+				04EE54311E1F387400356BB4 /* opencore-amrnb.pc in Resources */,
 				126486D11E1E980C00714805 /* chat_audio_tip_volum@2x.png in Resources */,
 				126486CF1E1E97FD00714805 /* chat_audio_tip_short@2x.png in Resources */,
 				04EE53EB1E1DD48800356BB4 /* chat_emoji@2x.png in Resources */,
 				04EE540E1E1E446300356BB4 /* 害怕@2x.png in Resources */,
 				04EE540F1E1E446300356BB4 /* 害羞@2x.png in Resources */,
 				04EE54161E1E446300356BB4 /* 脸红@2x.png in Resources */,
+				04EE54581E1F7EE200356BB4 /* chat_right_bubble@2x.png in Resources */,
 				04EE541A1E1E446300356BB4 /* 飞吻@2x.png in Resources */,
 				04EE541B1E1E446300356BB4 /* 鬼脸@2x.png in Resources */,
 				126486CB1E1E979300714805 /* chat_audio_tip_norm@2x.png in Resources */,
@@ -875,6 +1102,7 @@
 				04EE54071E1E446300356BB4 /* 亲亲@2x.png in Resources */,
 				04EE540C1E1E446300356BB4 /* 大哭@2x.png in Resources */,
 				04EE540B1E1E446300356BB4 /* 喜欢@2x.png in Resources */,
+				04EE54321E1F387400356BB4 /* opencore-amrwb.pc in Resources */,
 				04EE54121E1E446300356BB4 /* 想想@2x.png in Resources */,
 				04EE54191E1E446300356BB4 /* 难过@2x.png in Resources */,
 				04EE54171E1E446300356BB4 /* 苦脸@2x.png in Resources */,
@@ -901,6 +1129,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		373BBA4B90353D6039674C65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCModuleManagerTests/Pods-LYCModuleManagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F862D45EBC8F7F31A32B71A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCModuleManagerUITests/Pods-LYCModuleManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58EF8341EFFF74AE5DBBA71D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCModuleManager/Pods-LYCModuleManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C0C0DC6206ACE0B4260FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC61365A79BFBA4A9129952 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCModuleManager/Pods-LYCModuleManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73151520E09C07ECACA52F64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C62388B0E218AADEBF3E050B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCModuleManagerTests/Pods-LYCModuleManagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7597EA427D9F129863D1E58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFCE1F8139F2BA08688E482E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCModuleManagerUITests/Pods-LYCModuleManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		040DBE751E07CA6100D15EF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -913,30 +1279,43 @@
 				12CBC4AA1E080D96007C7850 /* UIFont+QJKJHelper.m in Sources */,
 				12CBC4C81E0822CE007C7850 /* QJKJScrollView.m in Sources */,
 				12CBC4A51E080C2C007C7850 /* QJKJLabel.m in Sources */,
+				04EE543D1E1F4F7400356BB4 /* QJKJDataBaseManager.m in Sources */,
+				04EE542E1E1F387400356BB4 /* amrFileCodec.m in Sources */,
+				04EE545F1E1F89BE00356BB4 /* QJKJImageLookView.m in Sources */,
+				04EE545C1E1F893C00356BB4 /* QJKJImageScrollView.m in Sources */,
 				123640BA1E1D2D0400B7D371 /* QJKJNavigationVC.m in Sources */,
 				12CBC4B11E081A36007C7850 /* UIView+QJKJBase.m in Sources */,
 				12CBC4B91E081FF8007C7850 /* QJKJBaseVC.m in Sources */,
 				040DBE8A1E07CA6100D15EF9 /* LYCModuleManager.xcdatamodeld in Sources */,
 				046AA5B41E07D48E0097EC30 /* QJKJTabBarController.m in Sources */,
+				04EE54501E1F781D00356BB4 /* QJKJChatTextCell.m in Sources */,
 				123640B71E1D266A00B7D371 /* QJKJChatInputView.m in Sources */,
 				12CBC4BC1E082049007C7850 /* QJKJHomeVC.m in Sources */,
 				12CBC4C21E0822B8007C7850 /* QJKJCollectionView.m in Sources */,
 				123640BD1E1D334200B7D371 /* QJKJChatFaceView.m in Sources */,
 				12CBC4CE1E0822F0007C7850 /* QJKJTableView.m in Sources */,
+				04EE54621E1F8EFD00356BB4 /* QJKJImageLookCell.m in Sources */,
 				12CBC4CB1E0822DB007C7850 /* QJKJSwitch.m in Sources */,
 				12CBC4D11E082306007C7850 /* QJKJTableViewCell.m in Sources */,
+				04EE54401E1F511300356BB4 /* QJKJDataBaseManager+QJKJChatRecord.m in Sources */,
 				12CBC4D71E08234E007C7850 /* QJKJView.m in Sources */,
 				123640C01E1D3CE300B7D371 /* QJKJChatMoreView.m in Sources */,
 				126486D71E1E9F6800714805 /* QJKJRecordAudio.m in Sources */,
+				04EE544D1E1F780B00356BB4 /* QJKJChatImageCell.m in Sources */,
 				040DBE7E1E07CA6100D15EF9 /* main.m in Sources */,
+				04EE54441E1F752000356BB4 /* QJKJDateShareHelper.m in Sources */,
+				04EE54351E1F41CF00356BB4 /* QJKJChatInfoModel.m in Sources */,
 				12CBC4C51E0822C2007C7850 /* QJKJButton.m in Sources */,
 				12CBC4BF1E0822A4007C7850 /* QJKJImageView.m in Sources */,
 				04EE53F01E1DDDA900356BB4 /* QJKJChatAudioInputView.m in Sources */,
 				12CBC4A21E080B25007C7850 /* QJKJTextView.m in Sources */,
 				12CBC4DE1E0830A0007C7850 /* LSDropBoxCell.m in Sources */,
 				12CBC4D41E082318007C7850 /* QJKJTextField.m in Sources */,
+				04EE54471E1F779C00356BB4 /* QJKJChatTimeCell.m in Sources */,
 				046AA5AF1E07D2C30097EC30 /* AppDelegate.m in Sources */,
 				12CBC4AD1E081578007C7850 /* UIColor+QJKJHelper.m in Sources */,
+				04EE54391E1F482000356BB4 /* QJKJNetworkingRequest.m in Sources */,
+				04EE544A1E1F77FD00356BB4 /* QJKJChatAudioCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,14 +1443,20 @@
 		};
 		040DBEAA1E07CA6100D15EF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBDAB189AF40FA43FC0C580 /* Pods-LYCModuleManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B58J9B3HCL;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LYCModuleManager/Macro/LYCPch.pch;
 				INFOPLIST_FILE = LYCModuleManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LYCModuleManager/Module/BasicModule/ChatModule/amr/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1079,14 +1464,20 @@
 		};
 		040DBEAB1E07CA6100D15EF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DDDBF8A808EC3944322C70 /* Pods-LYCModuleManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B58J9B3HCL;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LYCModuleManager/Macro/LYCPch.pch;
 				INFOPLIST_FILE = LYCModuleManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LYCModuleManager/Module/BasicModule/ChatModule/amr/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Giga.LYCModuleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1094,6 +1485,7 @@
 		};
 		040DBEAD1E07CA6100D15EF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6C6C787EC336D9F7309D8B /* Pods-LYCModuleManagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7LPWK7MV6D;
@@ -1107,6 +1499,7 @@
 		};
 		040DBEAE1E07CA6100D15EF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A02036D97DA244313EA213 /* Pods-LYCModuleManagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7LPWK7MV6D;
@@ -1120,6 +1513,7 @@
 		};
 		040DBEB01E07CA6100D15EF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F14E8C9C76CD7ACE044D2A /* Pods-LYCModuleManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7LPWK7MV6D;
 				INFOPLIST_FILE = LYCModuleManagerUITests/Info.plist;
@@ -1132,6 +1526,7 @@
 		};
 		040DBEB11E07CA6100D15EF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9029FAF6711363D46A0BB07 /* Pods-LYCModuleManagerUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7LPWK7MV6D;
 				INFOPLIST_FILE = LYCModuleManagerUITests/Info.plist;

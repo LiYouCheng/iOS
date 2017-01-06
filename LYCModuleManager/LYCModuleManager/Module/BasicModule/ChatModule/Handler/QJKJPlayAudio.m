@@ -9,6 +9,7 @@
 #import "QJKJPlayAudio.h"
 
 #import <AVFoundation/AVFoundation.h>
+#import "amrFileCodec.h"
 
 @interface QJKJPlayAudio ()
 <AVAudioPlayerDelegate>
@@ -19,8 +20,18 @@
 
 @implementation QJKJPlayAudio
 
-- (void)playWithData:(NSData *)audioData
-{
+/**
+ *  开始播放
+ *
+ *  @param audioString 经WavToAmr转换后base64处理的音频数据
+ */
+- (void)playWithString:(NSString *)audioString {
+    
+    //先base64转换成data
+    NSData *audioData = [[NSData alloc] initWithBase64EncodedString:audioString options:0];
+    //然后AmrToWav
+    audioData = DecodeAMRToWAVE(audioData);
+    
     if ([audioData isEqualToData:self.audioPlayer.data])
     {
         [self stopPlay];
@@ -49,9 +60,14 @@
 }
 
 //播放时间
-- (NSTimeInterval)audioPlayTimeForData:(NSData *)data
-{
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];
+- (CGFloat)audioPlayTimeForString:(NSString *)audioString {
+    
+    //先base64转换成data
+    NSData *audioData = [[NSData alloc] initWithBase64EncodedString:audioString options:0];
+    //然后AmrToWav
+    audioData = DecodeAMRToWAVE(audioData);
+    
+    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithData:audioData error:nil];
     
     return audioPlayer.duration;
 }

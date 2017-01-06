@@ -8,14 +8,34 @@
 
 #import "QJKJImageView.h"
 
-@implementation QJKJImageView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+@implementation QJKJImageView {
+    UITapGestureRecognizer *_tap;
 }
-*/
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+         _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickedImage)];
+    }
+    return self;
+}
+
+- (void)clickedImage {
+    if (_clickBlock) {
+        _clickBlock(self);
+    }
+}
+
+- (void)setIsClick:(BOOL)isClick {
+    if (isClick) {
+        self.userInteractionEnabled = YES;
+        [self addGestureRecognizer:_tap];
+    }
+    else {
+        self.userInteractionEnabled = NO;
+        [self removeGestureRecognizer:_tap];
+    }
+}
 
 @end

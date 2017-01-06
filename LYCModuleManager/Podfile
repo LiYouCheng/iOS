@@ -1,0 +1,21 @@
+platform :ios, '7.0'
+
+target 'LYCModuleManager' do
+
+pod 'AFNetworking', '~> 3.1.0'
+pod 'MJExtension', '~> 3.0.13'
+pod 'SDWebImage', '~> 3.8.2'
+pod 'SVProgressHUD', '~> 2.0.3'
+pod 'FMDB', '~> 2.5'
+
+  target 'LYCModuleManagerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'LYCModuleManagerUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

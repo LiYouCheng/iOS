@@ -24,13 +24,20 @@
 /**
  *  开始播放
  *
- *  @param audioData 音频数据
+ *  @param audioString 经WavToAmr转换后base64处理的音频数据
  */
-- (void)playWithData:(NSData *)audioData;
+- (void)playWithString:(NSString *)audioString;
 /**
  *  停止播放
  */
 - (void)stopPlay;
-//播放时间
-- (NSTimeInterval)audioPlayTimeForData:(NSData *)data;
+
+
+/**
+ 播放时间
+
+ @param audioString 数据
+ @return 时间
+ */
+- (CGFloat)audioPlayTimeForString:(NSString *)audioString;
 @end

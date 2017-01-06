@@ -135,8 +135,12 @@
     
     
     NSDictionary *dict = [self.recordAudio finishRecord];
-    DLog(@"dict = %@",dict);
-    
+    if (dict && dict[@"audioString"]) {
+        NSString *aduioString = dict[@"audioString"];
+        if (_delegate && [_delegate respondsToSelector:@selector(selectAudioFinish:)]) {
+            [_delegate selectAudioFinish:aduioString];
+        }
+    }
 }
 
 /**

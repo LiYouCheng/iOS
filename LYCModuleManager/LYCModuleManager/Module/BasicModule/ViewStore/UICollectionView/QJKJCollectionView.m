@@ -10,12 +10,11 @@
 
 @implementation QJKJCollectionView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout {
+    if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
+        
+    }
+    return self;
 }
-*/
 
 @end
